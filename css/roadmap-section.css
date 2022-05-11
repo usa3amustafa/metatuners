@@ -31,15 +31,16 @@
 .step-image {
   display: flex;
   align-items: flex-end;
+
+  transform-style: preserve-3d;
+  perspective: 1000px;
 }
 
 .step-img {
   margin-bottom: 2rem;
   justify-self: center;
-}
 
-.step-info {
-  margin-left: 6rem;
+  transform: translateZ(30px);
 }
 
 .step-title {
@@ -62,8 +63,11 @@
   .steps {
     row-gap: 2rem;
   }
+}
 
-  .step-image {
-    max-width: 300px;
+@media (max-width: 800px) {
+  .steps {
+    grid-template-columns: 1fr;
+    row-gap: 4rem;
   }
 }

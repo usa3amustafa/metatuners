@@ -64,11 +64,11 @@
 }
 
 .splash-enter:hover:before {
-  animation: glitch-test 1.5s infinite linear alternate-reverse;
+  animation: glitch-test 1s infinite linear alternate-reverse;
 }
 
 .splash-enter:hover:after {
-  animation: glitch-test 2s infinite linear alternate;
+  animation: glitch-test 1s infinite linear alternate;
 }
 
 @keyframes glitch-test {
