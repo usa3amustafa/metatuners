@@ -53,6 +53,10 @@
 
     <!-- js -->
     <script src="./js/app.js" defer></script>
+    <script src="./js/vanilla-tilt.js" defer></script>
+
+    <!-- preloader js -->
+    <script src="./js/preLoader.js" defer></script>
   </head>
   <body>
     <!-- nav homepage start-->
@@ -393,11 +397,14 @@
         <div class="steps">
           <!-- step one -->
           <div class="step">
-            <img
-              src="./img/ROADMAP/RM_Icon1.png"
-              alt="cezar"
+            <div
               class="step-image"
-            />
+              data-tilt
+              data-tilt-glare
+              data-tilt-max-glare="0.05"
+            >
+              <img src="./img/ROADMAP/RM_Icon1.png" alt="" class="step-img" />
+            </div>
             <div class="step-info">
               <h3 class="step-title">1st gear</h3>
               <ul>
@@ -410,11 +417,14 @@
 
           <!-- step two -->
           <div class="step">
-            <img
-              src="./img/ROADMAP/RM_Icon2.png"
-              alt="cezar"
+            <div
               class="step-image"
-            />
+              data-tilt
+              data-tilt-glare
+              data-tilt-max-glare="0.05"
+            >
+              <img src="./img/ROADMAP/RM_Icon2.png" alt="" class="step-img" />
+            </div>
             <div class="step-info">
               <h3 class="step-title">2nd gear</h3>
               <ul>
@@ -427,11 +437,14 @@
 
           <!-- step three -->
           <div class="step">
-            <img
-              src="./img/ROADMAP/RM_Icon3.png"
-              alt="cezar"
+            <div
               class="step-image"
-            />
+              data-tilt
+              data-tilt-glare
+              data-tilt-max-glare="0.05"
+            >
+              <img src="./img/ROADMAP/RM_Icon3.png" alt="" class="step-img" />
+            </div>
             <div class="step-info">
               <h3 class="step-title">3rd gear</h3>
               <ul>
@@ -445,11 +458,14 @@
 
           <!-- step four -->
           <div class="step">
-            <img
-              src="./img/ROADMAP/RM_Icon4.png"
-              alt="cezar"
+            <div
               class="step-image"
-            />
+              data-tilt
+              data-tilt-glare
+              data-tilt-max-glare="0.05"
+            >
+              <img src="./img/ROADMAP/RM_Icon4.png" alt="" class="step-img" />
+            </div>
             <div class="step-info">
               <h3 class="step-title">4th gear</h3>
               <ul>
@@ -576,5 +592,8 @@
       </div>
     </footer>
     <!-- footer end -->
+
+    <!-- preloader -->
+    <div id="preloader"></div>
   </body>
 </html>

@@ -23,10 +23,17 @@
 .step {
   display: grid;
   grid-template-rows: 1fr auto;
+
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 .step-image {
-  max-width: 400px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.step-img {
   margin-bottom: 2rem;
   justify-self: center;
 }
