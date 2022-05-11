@@ -36,6 +36,10 @@
   perspective: 1000px;
 }
 
+.step-info {
+  margin-left: 2rem;
+}
+
 .step-img {
   margin-bottom: 2rem;
   justify-self: center;
