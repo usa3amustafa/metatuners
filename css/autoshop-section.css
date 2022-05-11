@@ -1,0 +1,32 @@
+/* auto shop section */
+
+.auto-shop-section-title {
+  margin-bottom: 1rem;
+}
+
+.auto-shop-img {
+  position: relative;
+
+  background-image: url('../img/AUTO SHOP/autoshop image.png');
+
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.auto-shop-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 1200px) {
+  .auto-shop-section-title {
+    font-size: 2rem;
+  }
+
+  .auto-shop-img {
+    height: 70vh;
+  }
+}

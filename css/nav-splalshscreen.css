@@ -1,0 +1,45 @@
+/* splash screen navbar */
+
+nav {
+  padding: 1rem 0;
+}
+
+.nav {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 10rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  font-size: 1.25rem;
+  margin-top: -1.25rem;
+}
+
+.social-link {
+  color: var(--text-clr);
+}
+
+@media (max-width: 1000px) {
+  .logo {
+    width: 7.5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .logo {
+    width: 5rem;
+  }
+
+  .social-links {
+    gap: 0.5rem;
+    font-size: 1rem;
+    margin-top: 0rem;
+  }
+}

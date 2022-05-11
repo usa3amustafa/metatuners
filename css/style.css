@@ -1,0 +1,72 @@
+/* fonts */
+
+@font-face {
+  font-family: 'Anglecut';
+  src: url('../FONTS/Anglecut.otf');
+}
+
+/* utlities  */
+
+:root {
+  --bgc: #000;
+  --text-clr: #fefefe;
+  --black-light: #a2a2a2;
+  --black-light-2: #1f1f1f;
+  --blue-clr: #004fde;
+  --franker: Francker W10;
+  --anglecut: Anglecut;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 95%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+body {
+  background-color: var(--bgc);
+  color: var(--text-clr);
+  font-family: var(--franker);
+}
+
+section {
+  padding: 4rem 0;
+}
+
+.section-title {
+  font-size: 3rem;
+  font-family: var(--anglecut);
+  text-transform: uppercase;
+}
+
+.btn {
+  padding: 2rem 4rem;
+  font-family: var(--anglecut);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  background-color: var(--bgc);
+  color: var(--text-clr);
+  text-decoration: none;
+  border-radius: 1rem;
+
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.btn:hover {
+  background-color: var(--text-clr);
+  color: var(--bgc);
+}

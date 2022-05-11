@@ -1,0 +1,23 @@
+/* collection */
+.collection-section-title {
+  margin-bottom: 1rem;
+}
+
+.collection-desc {
+  line-height: 1.6;
+  max-width: 70ch;
+}
+
+.collection-images {
+  display: flex;
+}
+
+.collection-img {
+  max-width: 25%;
+}
+
+@media (max-width: 1200px) {
+  .collection-section-title {
+    font-size: 2rem;
+  }
+}
