@@ -237,6 +237,10 @@
     margin: 0 auto;
   }
 
+  .slider-images {
+    grid-row: 1/2;
+  }
+
   .charector-tabs {
     max-width: 800px;
     margin: 0 auto;
@@ -261,5 +265,28 @@
   .charector-tab {
     padding: 0.25rem 0.5rem;
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .marquee {
+    height: 400px;
+  }
+}
+@media (max-width: 506px) {
+  .marquee {
+    height: 350px;
+  }
+  .marquee-content > li {
+    height: 150px;
+  }
+}
+@media (max-width: 431px) {
+  .marquee {
+    height: 320px;
+  }
+
+  .marquee-content > li {
+    height: 126px;
   }
 }
