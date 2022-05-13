@@ -94,5 +94,6 @@ section {
 }
 
 .preloader-img {
+  width: 70%;
   max-width: 300px;
 }

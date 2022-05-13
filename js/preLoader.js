@@ -12,5 +12,5 @@ setInterval(function () {
   preloaderImg.src = '../img/gliched-logo.gif'
   setTimeout(function () {
     preloaderImg.src = '../img/SPLASH PAGE/MetaTuners_M.png'
-  }, 1000)
-}, 3000)
+  }, 500)
+}, 1000)
