@@ -1,25 +1,3 @@
-// nav slide down
-
-const navHomepage = document.querySelector('.nav-homepage')
-
-const revealnavHomepage = function (enteries, observer) {
-  const [entry] = enteries
-
-  if (!entry.isIntersecting) return
-
-  entry.target.classList.remove('nav-hidden')
-
-  observer.unobserve(entry.target)
-}
-
-const navHomepageObserver = new IntersectionObserver(revealnavHomepage, {
-  root: null,
-  threshold: 0,
-})
-
-navHomepageObserver.observe(navHomepage)
-navHomepage.classList.add('nav-hidden')
-
 // welcome section title text slide up
 
 const welcomeSectionTitles = document.querySelectorAll('.welcome-section-title')
@@ -38,7 +16,7 @@ const welcomeSectionTitleObserver = new IntersectionObserver(
   revealWelcomeSectionTitle,
   {
     root: null,
-    threshold: 0.25,
+    threshold: 1,
   }
 )
 
@@ -65,7 +43,7 @@ const welcomeSectionTextsObserver = new IntersectionObserver(
   revealWelcomeSectionTexts,
   {
     root: null,
-    threshold: 0.25,
+    threshold: 0.75,
   }
 )
 
@@ -92,7 +70,7 @@ const welcomeSectionLinkObserver = new IntersectionObserver(
   revealWelcomeSectionLink,
   {
     root: null,
-    threshold: 0.25,
+    threshold: 1,
   }
 )
 
@@ -119,9 +97,56 @@ const welcomeSectionSocialLinksObserver = new IntersectionObserver(
   revealWelcomeSectionSocialLinks,
   {
     root: null,
-    threshold: 0.25,
+    threshold: 1,
   }
 )
 
 welcomeSectionSocialLinksObserver.observe(welcomeSectionSocialLinks)
 welcomeSectionSocialLinks.classList.add('welcome-section-social-links-hidden')
+
+// mint button container
+
+const mintBtnContainer = document.querySelector('.mint-btn-container')
+
+const revealMintBtnContainer = function (enteries, observer) {
+  const [entry] = enteries
+
+  if (!entry.isIntersecting) return
+
+  entry.target.classList.remove('mint-button-container-hidden')
+
+  observer.unobserve(entry.target)
+}
+
+const mintBtnContainerObserver = new IntersectionObserver(
+  revealMintBtnContainer,
+  {
+    root: null,
+    threshold: 0.2,
+  }
+)
+
+mintBtnContainerObserver.observe(mintBtnContainer)
+mintBtnContainer.classList.add('mint-button-container-hidden')
+
+// alert box container
+
+const alertBox = document.querySelector('.alert-box')
+
+const revealAlertBox = function (enteries, observer) {
+  const [entry] = enteries
+
+  if (!entry.isIntersecting) return
+
+  entry.target.classList.remove('alert-box-hidden')
+
+  observer.unobserve(entry.target)
+}
+
+const alertBoxObserver = new IntersectionObserver(revealAlertBox, {
+  root: null,
+  threshold: 0.25,
+})
+
+alertBoxObserver.observe(alertBox)
+alertBox.classList.add('alert-box-hidden')

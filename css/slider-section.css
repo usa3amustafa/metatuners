@@ -9,20 +9,8 @@
   margin-bottom: 4rem;
 }
 
-.jdm {
-  background-color: var(--blue-clr);
-}
-
-.exotic {
-  background-color: #ed2224;
-}
-
-.muscle {
-  background-color: #7e736d;
-}
-
-.euro {
-  background-color: #4c44a7;
+.charector-tab {
+  display: inline-block;
 }
 
 .charector-tab {
@@ -36,7 +24,44 @@
   box-shadow: inset 0 0 0 0 var(--text-clr);
   -webkit-transition: ease-out 0.6s;
   -moz-transition: ease-out 0.6s;
-  transition: ease-out 0.6s;
+  transition: box-shadow ease-out 0.6s;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(2rem);
+
+  transition: box-shadow ease-out 0.6s, transform 0.7s ease-out,
+    opacity 0.7s ease-out;
+}
+
+.fade-in.appear {
+  opacity: 1;
+  transform: translateY(0rem);
+}
+
+.jdm {
+  background-color: var(--blue-clr);
+
+  transition-delay: 0s;
+}
+
+.exotic {
+  background-color: #ed2224;
+
+  transition-delay: 0.2s;
+}
+
+.muscle {
+  background-color: #7e736d;
+
+  transition-delay: 0.4s;
+}
+
+.euro {
+  background-color: #4c44a7;
+
+  transition-delay: 0.6s;
 }
 
 .jdm:hover {
@@ -76,27 +101,36 @@
 
 .slider-item-title {
   text-transform: uppercase;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-family: var(--anglecut);
   margin-bottom: 1rem;
+
+  transition: transform 0.7s ease-out, opacity 0.7s ease-out;
 }
 
 .slider-item-subtitle {
   font-weight: normal;
   margin-bottom: 1rem;
+
+  transition: transform 0.7s ease-out, opacity 0.7s ease-out;
 }
 
 .slider-item-desc {
   line-height: 1.6;
   margin-bottom: 2rem;
   font-weight: normal;
+
+  transition: transform 0.7s ease-out, opacity 0.7s ease-out;
+  transition-delay: 0.25s;
 }
 
 .slider-item-info {
   text-transform: uppercase;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-family: var(--anglecut);
   margin-bottom: 1rem;
+
+  transition: transform 0.7s ease-out, opacity 0.7s ease-out;
 }
 
 .slider-item-links {
@@ -108,6 +142,8 @@
   padding-bottom: 1rem;
   margin-bottom: 1rem;
   border-bottom: 1px solid var(--blue-clr);
+
+  transition: transform 0.7s ease-out, opacity 0.7s ease-out;
 }
 
 .slider-item-link > a {
@@ -123,6 +159,8 @@
 
 .charector-img {
   align-self: center;
+
+  transition: transform 0.7s ease-out, opacity 0.7s ease-out;
 }
 
 .marquee {
@@ -133,6 +171,14 @@
   overflow: hidden;
 
   position: relative;
+
+  transition: opacity 0.7s ease-out;
+
+  transition-delay: 0.5s;
+}
+
+.marquee-hidden {
+  opacity: 0;
 }
 
 .marquee::before,

@@ -63,8 +63,14 @@
     <!-- slider js -->
     <script src="./js/slider.js" defer></script>
 
-    <!-- fadeinAnimations js -->
-    <script src="./js/fadeinAnimation.js" defer></script>
+    <!-- welcome section animations js -->
+    <script src="./js/animateWelcome.js" defer></script>
+
+    <!-- collection section animations js -->
+    <script src="./js/animateCollection.js" defer></script>
+
+    <!-- collection section animations js -->
+    <script src="./js/animateSlider.js" defer></script>
   </head>
   <body>
     <!-- nav homepage start-->
@@ -123,10 +129,12 @@
     <section class="welcome">
       <div class="container welcome-section">
         <div class="welcome-section-text">
-          <h2 class="section-title welcome-section-title">
+          <h2
+            class="section-title welcome-section-title title-hidden welcome-section-title-one"
+          >
             welcome to the resistance
           </h2>
-          <p class="welcome-section-desc">
+          <p class="welcome-section-desc text-hidden">
             The tuner scene is under attack. There is an ever increasing trend
             of modified cars being crushed, car meetups disbanded, and racing
             getting punished harder than ever. At the same time, “The Machine”
@@ -139,12 +147,16 @@
             staying true to themselves, remaining in the fast lane, and most
             importantly, staying in the driver’s seat.
           </p>
-          <a href="#" class="welcome-section-link"
+          <a href="#" class="welcome-section-link link-hidden"
             >Are you ready to take the wheel?</a
           >
-          <h2 class="section-title welcome-section-title">minting q2</h2>
+          <h2 class="section-title welcome-section-title title-hidden">
+            minting q2
+          </h2>
 
-          <div class="welcome-section-social-links">
+          <div
+            class="welcome-section-social-links welcome-section-social-links-hidden"
+          >
             Collection size | 8000 @ 0.08 ETH
             <a href="#" class="welcome-section-social-link">
               <i class="fa-brands fa-discord"></i>
@@ -154,13 +166,13 @@
             </a>
           </div>
 
-          <p class="welcome-section-desc">
+          <p class="welcome-section-desc text-hidden">
             Our mint date will be announced soon. Please check Twitter and
             Discord for the official announcement.
           </p>
         </div>
         <div class="welcome-section-left-col">
-          <div class="mint-btn-container">
+          <div class="mint-btn-container mint-button-container-hidden">
             <img
               src="./img/HOME PAGE/Mint Button Container.png"
               alt=""
@@ -194,8 +206,10 @@
     <!-- collection section start -->
     <section class="collection">
       <div class="container collection-section">
-        <h2 class="section-title collection-section-title">the collection</h2>
-        <p class="collection-desc">
+        <h2 class="section-title collection-section-title title-hidden">
+          the collection
+        </h2>
+        <p class="collection-desc text-hidden">
           The Meta Tuners Genesis collection is an algorithmacally generated
           8,000 piece collection consisting of 80 legendary car inspired PFP
           characters, spanning across JDM, euro, muscle and exotic factions with
@@ -207,7 +221,12 @@
         </p>
       </div>
 
-      <div class="collection-images">
+      <div class="collection-images-container">
+        <div class="collection-bg">
+          <img src="./img/COLLECTION/Collection-Character-Image.jpg" alt="" />
+        </div>
+
+        <!-- <div class="collection-images">
         <img
           src="./img/COLLECTION/MUSCLE Character.png"
           alt=""
@@ -228,6 +247,7 @@
           alt=""
           class="collection-img-4 collection-img"
         />
+      </div> -->
       </div>
     </section>
     <!-- collection section end -->
@@ -236,10 +256,16 @@
     <section class="slider">
       <div class="container slider-section">
         <div class="charector-tabs">
-          <div class="charector-tab jdm btn active-tab" data-tab="1">JDM</div>
-          <div class="charector-tab exotic btn" data-tab="2">exotic</div>
-          <div class="charector-tab muscle btn" data-tab="3">muscle</div>
-          <div class="charector-tab euro btn" data-tab="4">euro</div>
+          <div class="charector-tab jdm btn active-tab fade-in" data-tab="1">
+            JDM
+          </div>
+          <div class="charector-tab exotic btn fade-in" data-tab="2">
+            exotic
+          </div>
+          <div class="charector-tab muscle btn fade-in" data-tab="3">
+            muscle
+          </div>
+          <div class="charector-tab euro btn fade-in" data-tab="4">euro</div>
         </div>
 
         <div class="slider-item slider-item-1 active-slider-item">

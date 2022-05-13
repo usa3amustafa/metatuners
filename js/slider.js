@@ -2,12 +2,6 @@ const tabs = document.querySelectorAll('.charector-tab')
 const tabsContainer = document.querySelector('.charector-tabs')
 const tabsContent = document.querySelectorAll('.slider-item')
 
-// tabs.forEach(tab =>
-//   tab.addEventListener('click', () => {
-//     console.log('tab')
-//   })
-// )
-
 tabsContainer.addEventListener('click', e => {
   const clicked = e.target.closest('.charector-tab')
 
