@@ -51,6 +51,7 @@ section {
   font-size: 3rem;
   font-family: var(--anglecut);
   text-transform: uppercase;
+  transition: transform 1s ease-out, opacity 1s ease-out;
 }
 
 .btn {
@@ -96,4 +97,32 @@ section {
 .preloader-img {
   width: 70%;
   max-width: 300px;
+}
+
+/* title hidden */
+
+.title-hidden {
+  opacity: 0;
+  transform: translateY(2rem);
+}
+
+/* text hidden */
+
+.text-hidden {
+  opacity: 0;
+  transform: translateY(2rem);
+}
+
+/* text hidden */
+
+.link-hidden {
+  opacity: 0;
+  transform: translateY(2rem);
+}
+
+/* welcome section social links hidden */
+
+.welcome-section-social-links-hidden {
+  opacity: 0;
+  transform: translateY(2rem);
 }

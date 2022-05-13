@@ -9,11 +9,15 @@
 .welcome-section-title {
   font-size: 2rem;
   margin-bottom: 1rem;
+
+  transition: transform 1s ease-out, opacity 1.5s ease-out;
 }
 
 .welcome-section-desc {
   line-height: 1.6;
   margin-bottom: 1rem;
+
+  transition: transform 1s ease-out, opacity 1.5s ease-out;
 }
 
 .welcome-section-link {
@@ -21,6 +25,8 @@
   display: inline-block;
   text-decoration: none;
   margin-bottom: 3rem;
+
+  transition: transform 1s ease-out, opacity 1.5s ease-out;
 }
 
 .welcome-section-social-links {
@@ -32,6 +38,8 @@
   color: var(--blue-clr);
 
   margin-bottom: 1rem;
+
+  transition: transform 1s ease-out, opacity 1.5s ease-out;
 }
 
 .welcome-section-social-link > i {
