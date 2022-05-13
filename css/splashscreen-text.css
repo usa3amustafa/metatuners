@@ -18,7 +18,7 @@
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 0.5rem 0.5rem;
+  padding: 0.25rem 0.5rem;
   font-weight: 500;
   font-size: 3rem;
   font-family: var(--anglecut);
@@ -26,12 +26,12 @@
   color: var(--text-clr);
   text-align: center;
   text-transform: uppercase;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
   margin: 0 auto;
 
-  background: var(--text-clr);
+  /* background: var(--text-clr);
   color: var(--bgc);
-  border-radius: 2px;
+  border-radius: 2px; */
 }
 
 .splash-enter:before,
@@ -44,44 +44,44 @@
   width: 100%;
   -webkit-clip: rect(0px, 0px, 0px, 0px);
   clip: rect(0px, 0px, 0px, 0px);
-  background: var(--text-clr);
+  background: var(--bgc);
   border-radius: 2px;
-  color: var(--bgc);
+  color: var(--text-clr);
 }
 
 .splash-enter:before {
   left: -3px;
   top: -2px;
-  text-shadow: 2px 0 var(--text-clr);
-  box-shadow: 2px 0 var(--text-clr);
+  text-shadow: 1px 0 var(--bgc);
+  box-shadow: 1px 0 var(--bgc);
   border-radius: 2px;
 
-  animation: glitch-test 1s infinite linear alternate-reverse;
+  /* animation: glitch-test 1s infinite linear alternate-reverse; */
 }
 
 .splash-enter:after {
-  left: 2px;
+  left: 1px;
   bottom: -2px;
-  text-shadow: -1px 0 var(--text-clr);
-  box-shadow: -1px 0 var(--text-clr);
+  text-shadow: -1px 0 var(--bgc);
+  box-shadow: -1px 0 var(--bgc);
   border-radius: 2px;
 
-  animation: glitch-test 1s infinite linear alternate;
+  /* animation: glitch-test 1s infinite linear alternate; */
 }
 
-/* .splash-enter:hover {
-  background: var(--text-clr);
-  color: var(--bgc);
-  border-radius: 2px;
-} */
+.splash-enter:hover {
+  background: var(--bgc);
+  color: var(--text-clr);
+  border-radius: 1.5px;
+}
 
-/* .splash-enter:hover:before {
-  animation: glitch-test 1s infinite linear alternate-reverse;
-} */
+.splash-enter:hover:before {
+  animation: glitch-test 2s infinite linear alternate-reverse;
+}
 
-/* .splash-enter:hover:after {
-  animation: glitch-test 1s infinite linear alternate;
-} */
+.splash-enter:hover:after {
+  animation: glitch-test 1.5s infinite linear alternate;
+}
 
 @keyframes glitch-test {
   0% {
