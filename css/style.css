@@ -80,10 +80,11 @@ section {
 /* preloader */
 
 #preloader {
-  background: #000 url('../img/gliched-logo.gif');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #000;
   height: 100vh;
   width: 100%;
   position: fixed;
@@ -92,11 +93,6 @@ section {
   z-index: 100;
 }
 
-@media (max-width: 1200px) {
-}
-
-@media (max-width: 800px) {
-  #preloader {
-    background-size: 100%;
-  }
+.preloader-img {
+  max-width: 300px;
 }
