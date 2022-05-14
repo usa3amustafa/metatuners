@@ -12,6 +12,8 @@
   height: 90vh;
   background-repeat: no-repeat;
   background-size: cover;
+
+  transition: transform 1s ease-out, opacity 1s ease-out;
 }
 
 .auto-shop-btn {

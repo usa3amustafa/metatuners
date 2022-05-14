@@ -98,3 +98,13 @@ section {
   width: 70%;
   max-width: 300px;
 }
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(2rem);
+}
+
+.fade-in.appear {
+  opacity: 1;
+  transform: translateY(0rem);
+}

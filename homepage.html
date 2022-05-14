@@ -63,14 +63,8 @@
     <!-- slider js -->
     <script src="./js/slider.js" defer></script>
 
-    <!-- welcome section animations js -->
-    <script src="./js/animateWelcome.js" defer></script>
-
-    <!-- collection section animations js -->
-    <script src="./js/animateCollection.js" defer></script>
-
-    <!-- collection section animations js -->
-    <script src="./js/animateSlider.js" defer></script>
+    <!-- fade in -->
+    <script src="./js/fadein.js" defer></script>
   </head>
   <body>
     <!-- nav homepage start-->
@@ -129,12 +123,10 @@
     <section class="welcome">
       <div class="container welcome-section">
         <div class="welcome-section-text">
-          <h2
-            class="section-title welcome-section-title title-hidden welcome-section-title-one"
-          >
+          <h2 class="section-title welcome-section-title fade-in">
             welcome to the resistance
           </h2>
-          <p class="welcome-section-desc text-hidden">
+          <p class="welcome-section-desc fade-in">
             The tuner scene is under attack. There is an ever increasing trend
             of modified cars being crushed, car meetups disbanded, and racing
             getting punished harder than ever. At the same time, “The Machine”
@@ -147,16 +139,14 @@
             staying true to themselves, remaining in the fast lane, and most
             importantly, staying in the driver’s seat.
           </p>
-          <a href="#" class="welcome-section-link link-hidden"
+          <a href="#" class="welcome-section-link fade-in"
             >Are you ready to take the wheel?</a
           >
-          <h2 class="section-title welcome-section-title title-hidden">
+          <h2 class="section-title welcome-section-title fade-in">
             minting q2
           </h2>
 
-          <div
-            class="welcome-section-social-links welcome-section-social-links-hidden"
-          >
+          <div class="welcome-section-social-links fade-in">
             Collection size | 8000 @ 0.08 ETH
             <a href="#" class="welcome-section-social-link">
               <i class="fa-brands fa-discord"></i>
@@ -166,13 +156,13 @@
             </a>
           </div>
 
-          <p class="welcome-section-desc text-hidden">
+          <p class="welcome-section-desc fade-in">
             Our mint date will be announced soon. Please check Twitter and
             Discord for the official announcement.
           </p>
         </div>
         <div class="welcome-section-left-col">
-          <div class="mint-btn-container mint-button-container-hidden">
+          <div class="mint-btn-container fade-in">
             <img
               src="./img/HOME PAGE/Mint Button Container.png"
               alt=""
@@ -181,7 +171,7 @@
             <a href="#" class="btn mint-container-btn">mint coming soon</a>
           </div>
 
-          <div class="alert-box">
+          <div class="alert-box fade-in">
             <img
               src="./img/HOME PAGE/Mint Button Icon.png"
               alt=""
@@ -206,10 +196,10 @@
     <!-- collection section start -->
     <section class="collection">
       <div class="container collection-section">
-        <h2 class="section-title collection-section-title title-hidden">
+        <h2 class="section-title collection-section-title fade-in">
           the collection
         </h2>
-        <p class="collection-desc text-hidden">
+        <p class="collection-desc fade-in">
           The Meta Tuners Genesis collection is an algorithmacally generated
           8,000 piece collection consisting of 80 legendary car inspired PFP
           characters, spanning across JDM, euro, muscle and exotic factions with
@@ -223,7 +213,11 @@
 
       <div class="collection-images-container">
         <div class="collection-bg">
-          <img src="./img/COLLECTION/Collection-Character-Image.jpg" alt="" />
+          <img
+            src="./img/COLLECTION/Collection-Character-Image.jpg"
+            class="collection-img fade-in"
+            alt=""
+          />
         </div>
 
         <!-- <div class="collection-images">
@@ -268,19 +262,20 @@
           <div class="charector-tab euro btn fade-in" data-tab="4">euro</div>
         </div>
 
+        <!-- slider item one -->
         <div class="slider-item slider-item-1 active-slider-item">
           <div class="slider-text">
-            <h2 class="slider-item-title">jdm</h2>
-            <h3 class="slider-item-subtitle">"The imposters"</h3>
-            <p class="slider-item-desc">
+            <h2 class="slider-item-title fade-in">jdm</h2>
+            <h3 class="slider-item-subtitle fade-in">"The imposters"</h3>
+            <p class="slider-item-desc fade-in">
               It’s been 50 years since the conception of the JDM Tuner scene.
               This group formed the early stages of drifting, modifying and
               racing. Now, the elicit street racers go under cover during the
               day, importing car parts from all over the world, equipping the
               Resistance for the battle against The Machine.
             </p>
-            <h2 class="slider-item-info">Info</h2>
-            <ul class="slider-item-links">
+            <h2 class="slider-item-info fade-in">Info</h2>
+            <ul class="slider-item-links fade-in">
               <li class="slider-item-link">
                 Meta Tuners
                 <a href="#">Opensea <i class="fa-solid fa-arrow-right"></i></a>
@@ -307,10 +302,10 @@
             <img
               src="./img/COLLECTION/JDM Character.png"
               alt="jdm"
-              class="charector-img"
+              class="charector-img fade-in"
             />
 
-            <div class="marquee">
+            <div class="marquee fade-in">
               <ul class="marquee-content">
                 <li>
                   <img src="./img/CAROUSELIMAGES/carousel-img1.png" alt="" />
@@ -352,13 +347,15 @@
             </div>
           </div>
 
-          <a href="#" class="btn slider-btn">mint coming soon</a>
+          <a href="#" class="btn slider-btn fade-in">mint coming soon</a>
         </div>
+
+        <!-- slider item 2 -->
         <div class="slider-item slider-item-2">
           <div class="slider-text">
-            <h2 class="slider-item-title">EXOTIC</h2>
-            <h3 class="slider-item-subtitle">"The Widowmakers"</h3>
-            <p class="slider-item-desc">
+            <h2 class="slider-item-title fade-in">EXOTIC</h2>
+            <h3 class="slider-item-subtitle fade-in">"The Widowmakers"</h3>
+            <p class="slider-item-desc fade-in">
               Coined “The Widowmakes” by the scene due to their insanely fast
               horsepower numbers and expensive gear. The Exotics play by their
               own rules. Exotics are amongst the most influential Tuners in
@@ -366,8 +363,8 @@
               assist the Resistance, others use it for self-seeking missions
               within the city.
             </p>
-            <h2 class="slider-item-info">Info</h2>
-            <ul class="slider-item-links">
+            <h2 class="slider-item-info fade-in">Info</h2>
+            <ul class="slider-item-links fade-in">
               <li class="slider-item-link">
                 Meta Tuners
                 <a href="#">Opensea <i class="fa-solid fa-arrow-right"></i></a>
@@ -394,10 +391,10 @@
             <img
               src="./img/COLLECTION/EXOTIC Character.png"
               alt="jdm"
-              class="charector-img"
+              class="charector-img fade-in"
             />
 
-            <div class="marquee">
+            <div class="marquee fade-in">
               <ul class="marquee-content">
                 <li>
                   <img src="./img/CAROUSELIMAGES/carousel-img1.png" alt="" />
@@ -441,11 +438,13 @@
 
           <a href="#" class="btn slider-btn">mint coming soon</a>
         </div>
+
+        <!-- slider item three -->
         <div class="slider-item slider-item-3">
           <div class="slider-text">
-            <h2 class="slider-item-title">MUSCLE</h2>
-            <h3 class="slider-item-subtitle">"The GearHeads"</h3>
-            <p class="slider-item-desc">
+            <h2 class="slider-item-title fade-in">MUSCLE</h2>
+            <h3 class="slider-item-subtitle fade-in">"The GearHeads"</h3>
+            <p class="slider-item-desc fade-in">
               Through their heritage of naturally aspirated technology and
               internal combustion engines; The Muscle Tuners supply the
               Resistance with the much needed power to fight off the Machine.
@@ -453,8 +452,8 @@
               as easily affected by electrical and malware attacks caused by the
               Machine.
             </p>
-            <h2 class="slider-item-info">Info</h2>
-            <ul class="slider-item-links">
+            <h2 class="slider-item-info fade-in">Info</h2>
+            <ul class="slider-item-links fade-in">
               <li class="slider-item-link">
                 Meta Tuners
                 <a href="#">Opensea <i class="fa-solid fa-arrow-right"></i></a>
@@ -481,10 +480,10 @@
             <img
               src="./img/COLLECTION/MUSCLE Character.png"
               alt="jdm"
-              class="charector-img"
+              class="charector-img fade-in"
             />
 
-            <div class="marquee">
+            <div class="marquee fade-in">
               <ul class="marquee-content">
                 <li>
                   <img src="./img/CAROUSELIMAGES/carousel-img1.png" alt="" />
@@ -526,20 +525,22 @@
             </div>
           </div>
 
-          <a href="#" class="btn slider-btn">mint coming soon</a>
+          <a href="#" class="btn slider-btn fade-in">mint coming soon</a>
         </div>
+
+        <!-- slider item four -->
         <div class="slider-item slider-item-4">
           <div class="slider-text">
-            <h2 class="slider-item-title">EURO</h2>
-            <h3 class="slider-item-subtitle">"The Engineers"</h3>
-            <p class="slider-item-desc">
+            <h2 class="slider-item-title fade-in">EURO</h2>
+            <h3 class="slider-item-subtitle fade-in">"The Engineers"</h3>
+            <p class="slider-item-desc fade-in">
               Known for their high performance and engineering skills, the Euro
               Tuners use their expertise to equip the Resistance with cutting
               edge technology. Euro Tuners have also been syphoning car-tech
               intel from deep within The Machines vaults in Hardrive City.
             </p>
-            <h2 class="slider-item-info">Info</h2>
-            <ul class="slider-item-links">
+            <h2 class="slider-item-info fade-in">Info</h2>
+            <ul class="slider-item-links fade-in">
               <li class="slider-item-link">
                 Meta Tuners
                 <a href="#">Opensea <i class="fa-solid fa-arrow-right"></i></a>
@@ -566,10 +567,10 @@
             <img
               src="./img/COLLECTION/EURO Character.png"
               alt="jdm"
-              class="charector-img"
+              class="charector-img fade-in"
             />
 
-            <div class="marquee">
+            <div class="marquee fade-in">
               <ul class="marquee-content">
                 <li>
                   <img src="./img/CAROUSELIMAGES/carousel-img1.png" alt="" />
@@ -611,7 +612,7 @@
             </div>
           </div>
 
-          <a href="#" class="btn slider-btn">mint coming soon</a>
+          <a href="#" class="btn slider-btn fade-in">mint coming soon</a>
         </div>
       </div>
     </section>
@@ -626,11 +627,11 @@
       <div class="container utilities-section">
         <div class="utilities-top">
           <div class="utilities-top-text">
-            <h2 class="section-title utilities-top-text-title">
+            <h2 class="section-title utilities-top-text-title fade-in">
               META TUNERS <br />
               NFT UTILITIES
             </h2>
-            <p class="utilities-top-desc">
+            <p class="utilities-top-desc fade-in">
               As the battle against the Machine rages on, your Meta Tuner
               Genesis NFTs will act as your membership token to the Resistance
               and also gives you many aditional points of value.
@@ -639,12 +640,13 @@
           <img
             src="./img/UTILITIES/key_background_gif.gif"
             alt=""
-            class="utilities-top-img"
+            class="utilities-top-img fade-in"
           />
         </div>
 
         <div class="utilities-bottom">
-          <div class="utility">
+          <!-- utility one -->
+          <div class="utility utility-one fade-in">
             <img src="./img/UTILITIES/Icon1.png" alt="" class="utility-icon" />
             <p class="utility-text">
               As the battle against the Machine rages on, your Meta Tuner
@@ -653,7 +655,8 @@
             </p>
           </div>
 
-          <div class="utility">
+          <!-- utility two -->
+          <div class="utility utility-two fade-in">
             <img src="./img/UTILITIES/Icon2.png" alt="" class="utility-icon" />
             <p class="utility-text">
               8,000 Unique Meta Tuners is your digital key to firing up your
@@ -661,7 +664,8 @@
             </p>
           </div>
 
-          <div class="utility">
+          <!-- utility three -->
+          <div class="utility utility-three fade-in">
             <img src="./img/UTILITIES/Icon3.png" alt="" class="utility-icon" />
             <p class="utility-text">
               Your unique NFT is 100% owned by you! All rights, artwork and
@@ -669,7 +673,8 @@
             </p>
           </div>
 
-          <div class="utility">
+          <!-- utility four -->
+          <div class="utility utility-four fade-in">
             <img src="./img/UTILITIES/Icon4.png" alt="" class="utility-icon" />
             <p class="utility-text">
               Ownership gives you access to “The Auto Shop”. The Meta Tuners
@@ -677,7 +682,8 @@
             </p>
           </div>
 
-          <div class="utility">
+          <!-- utility five -->
+          <div class="utility utility-five fade-in">
             <img src="./img/UTILITIES/Icon5.png" alt="" class="utility-icon" />
             <p class="utility-text">
               Meta Tuners Genesis NFT owners have governance rights within the
@@ -693,15 +699,15 @@
     <!-- roadmap section start -->
     <section class="roadmap">
       <div class="container roadmap-section">
-        <h2 class="section-title roadmap-section-title">roadmap</h2>
-        <p class="roadmap-desc">
+        <h2 class="section-title roadmap-section-title fade-in">roadmap</h2>
+        <p class="roadmap-desc fade-in">
           upon completing the mint we will begin shifting out of first gear into
           second and have a few other surprises for the community
         </p>
 
         <div class="steps">
           <!-- step one -->
-          <div class="step">
+          <div class="step step-one fade-in">
             <div class="step-image" data-tilt>
               <img src="./img/ROADMAP/RM_Icon1.png" alt="" class="step-img" />
             </div>
@@ -716,7 +722,7 @@
           </div>
 
           <!-- step two -->
-          <div class="step">
+          <div class="step step-two fade-in">
             <div class="step-image" data-tilt>
               <img src="./img/ROADMAP/RM_Icon2.png" alt="" class="step-img" />
             </div>
@@ -731,7 +737,7 @@
           </div>
 
           <!-- step three -->
-          <div class="step">
+          <div class="step step-three fade-in">
             <div class="step-image" data-tilt>
               <img src="./img/ROADMAP/RM_Icon3.png" alt="" class="step-img" />
             </div>
@@ -747,7 +753,7 @@
           </div>
 
           <!-- step four -->
-          <div class="step">
+          <div class="step step-four fade-in">
             <div class="step-image" data-tilt>
               <img src="./img/ROADMAP/RM_Icon4.png" alt="" class="step-img" />
             </div>
@@ -777,7 +783,7 @@
 
         <div class="team-members">
           <!-- member one -->
-          <div class="team-member">
+          <div class="team-member team-member-one fade-in">
             <img src="./img/TEAM/Cezar.png" alt="cezar" class="member-image" />
             <h3 class="member-name">CEZAR ARVELO</h3>
             <h4 class="member-role">Founder / Creator</h4>
@@ -785,7 +791,7 @@
           </div>
 
           <!-- member two -->
-          <div class="team-member">
+          <div class="team-member team-member-two fade-in">
             <img src="./img/TEAM/Jesse.png" alt="cezar" class="member-image" />
             <h3 class="member-name">JESSE PRINCE</h3>
             <h4 class="member-role">COO</h4>
@@ -793,7 +799,7 @@
           </div>
 
           <!-- member three -->
-          <div class="team-member">
+          <div class="team-member team-member-three fade-in">
             <img src="./img/TEAM/Mike.png" alt="cezar" class="member-image" />
             <h3 class="member-name">MIKE GENCO</h3>
             <h4 class="member-role">CMO</h4>
@@ -801,7 +807,7 @@
           </div>
 
           <!-- member four -->
-          <div class="team-member">
+          <div class="team-member team-member-four fade-in">
             <img src="./img/TEAM/Dylan.png" alt="cezar" class="member-image" />
             <h3 class="member-name">DYLAN McCLUNG</h3>
             <h4 class="member-role">Developer</h4>
@@ -809,7 +815,7 @@
           </div>
 
           <!-- member five -->
-          <div class="team-member">
+          <div class="team-member team-member-five fade-in">
             <img src="./img/TEAM/PAT.png" alt="cezar" class="member-image" />
             <h3 class="member-name">PAT TUPA</h3>
             <h4 class="member-role">Project Manager</h4>
@@ -817,7 +823,7 @@
           </div>
 
           <!-- member six -->
-          <div class="team-member">
+          <div class="team-member team-member-six fade-in">
             <img src="./img/TEAM/Ethan.png" alt="cezar" class="member-image" />
             <h3 class="member-name">ETHAN LEWIS</h3>
             <h4 class="member-role">Analyst / Strategist</h4>
@@ -830,12 +836,12 @@
     <!-- auto shop start -->
     <section class="auto-shop">
       <div class="container auto-shop-section">
-        <h2 class="auto-shop-section-title section-title">
+        <h2 class="auto-shop-section-title section-title fade-in">
           the auto shop (coming soon)
         </h2>
       </div>
 
-      <div class="auto-shop-img">
+      <div class="auto-shop-img fade-in">
         <a href="#" class="btn auto-shop-btn">connect wallet</a>
       </div>
     </section>

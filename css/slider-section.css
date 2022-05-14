@@ -27,41 +27,32 @@
   transition: box-shadow ease-out 0.6s;
 }
 
-.fade-in {
-  opacity: 0;
-  transform: translateY(2rem);
-
-  transition: box-shadow ease-out 0.6s, transform 0.7s ease-out,
-    opacity 0.7s ease-out;
-}
-
-.fade-in.appear {
-  opacity: 1;
-  transform: translateY(0rem);
-}
-
 .jdm {
   background-color: var(--blue-clr);
 
-  transition-delay: 0s;
+  transition: box-shadow ease-out 0.6s, transform 0.7s ease-out 0s,
+    opacity 0.7s ease-out 0s;
 }
 
 .exotic {
   background-color: #ed2224;
 
-  transition-delay: 0.2s;
+  transition: box-shadow ease-out 0.6s, transform 0.7s ease-out 0.3s,
+    opacity 0.7s ease-out 0.3s;
 }
 
 .muscle {
   background-color: #7e736d;
 
-  transition-delay: 0.4s;
+  transition: box-shadow ease-out 0.6s, transform 0.7s ease-out 0.6s,
+    opacity 0.7s ease-out 0.6s;
 }
 
 .euro {
   background-color: #4c44a7;
 
-  transition-delay: 0.6s;
+  transition: box-shadow ease-out 0.6s, transform 0.7s ease-out 0.9s,
+    opacity 0.7s ease-out 0.9s;
 }
 
 .jdm:hover {
@@ -121,7 +112,6 @@
   font-weight: normal;
 
   transition: transform 0.7s ease-out, opacity 0.7s ease-out;
-  transition-delay: 0.25s;
 }
 
 .slider-item-info {
@@ -135,6 +125,8 @@
 
 .slider-item-links {
   list-style: none;
+
+  transition: transform 0.7s ease-out, opacity 0.7s ease-out;
 }
 
 .slider-item-link {
@@ -142,8 +134,6 @@
   padding-bottom: 1rem;
   margin-bottom: 1rem;
   border-bottom: 1px solid var(--blue-clr);
-
-  transition: transform 0.7s ease-out, opacity 0.7s ease-out;
 }
 
 .slider-item-link > a {
@@ -160,7 +150,7 @@
 .charector-img {
   align-self: center;
 
-  transition: transform 0.7s ease-out, opacity 0.7s ease-out;
+  transition: transform 0.7s ease-out 0.3s, opacity 0.7s ease-out 0.3s;
 }
 
 .marquee {
@@ -172,9 +162,7 @@
 
   position: relative;
 
-  transition: opacity 0.7s ease-out;
-
-  transition-delay: 0.5s;
+  transition: transform 0.7s ease-out 0.6s, opacity 0.7s ease-out 0.6s;
 }
 
 .marquee-hidden {
@@ -238,6 +226,9 @@
   -webkit-transition: ease-out 0.4s;
   -moz-transition: ease-out 0.4s;
   transition: ease-out 0.4s;
+
+  transition: box-shadow ease-out 0.6s, transform 0.7s ease-out,
+    opacity 0.7s ease-out;
 }
 
 .slider-btn:hover {

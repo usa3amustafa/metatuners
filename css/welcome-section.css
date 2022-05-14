@@ -9,15 +9,13 @@
 .welcome-section-title {
   font-size: 2rem;
   margin-bottom: 1rem;
-
-  transition: transform 1s ease-out, opacity 1.5s ease-out;
 }
 
 .welcome-section-desc {
   line-height: 1.6;
   margin-bottom: 1rem;
 
-  transition: transform 1s ease-out, opacity 1.5s ease-out;
+  transition: transform 0.7s ease-out, opacity 0.7s ease-out;
 }
 
 .welcome-section-link {
@@ -26,7 +24,7 @@
   text-decoration: none;
   margin-bottom: 3rem;
 
-  transition: transform 1s ease-out, opacity 1.5s ease-out;
+  transition: transform 0.7s ease-out, opacity 0.7s ease-out;
 }
 
 .welcome-section-social-links {
@@ -39,7 +37,7 @@
 
   margin-bottom: 1rem;
 
-  transition: transform 1s ease-out, opacity 1.5s ease-out;
+  transition: transform 0.7s ease-out, opacity 0.7s ease-out;
 }
 
 .welcome-section-social-link > i {
@@ -56,7 +54,7 @@
 
   position: relative;
 
-  transition: transform 1s ease-out, opacity 1.5s ease-out;
+  transition: transform 0.7s ease-out, opacity 0.7s ease-out;
 }
 
 .mint-btn-container-img {
@@ -93,7 +91,7 @@
   bottom: 10px;
   left: 0;
 
-  transition: transform 1s ease-out, opacity 1.5s ease-out;
+  transition: transform 0.7s ease-out, opacity 0.7s ease-out;
 }
 
 .alert-icon {
@@ -162,46 +160,4 @@
   .alert-icon {
     width: 7.5rem;
   }
-}
-
-/* title hidden */
-
-.title-hidden {
-  opacity: 0;
-  transform: translateY(2rem);
-}
-
-/* text hidden */
-
-.text-hidden {
-  opacity: 0;
-  transform: translateY(2rem);
-}
-
-/* text hidden */
-
-.link-hidden {
-  opacity: 0;
-  transform: translateY(2rem);
-}
-
-/* welcome section social links hidden */
-
-.welcome-section-social-links-hidden {
-  opacity: 0;
-  transform: translateY(2rem);
-}
-
-/* mint button container hidden */
-
-.mint-button-container-hidden {
-  opacity: 0;
-  transform: translateY(2rem);
-}
-
-/* alert box hidden */
-
-.alert-box-hidden {
-  opacity: 0;
-  transform: translateY(2rem);
 }
