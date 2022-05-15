@@ -37,10 +37,6 @@
 }
 
 @media (max-width: 1200px) {
-  .auto-shop-section-title {
-    font-size: 2rem;
-  }
-
   .auto-shop-img {
     height: 70vh;
   }

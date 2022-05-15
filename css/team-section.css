@@ -4,13 +4,35 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 2rem;
-  row-gap: 4rem;
+  row-gap: 1rem;
 
   margin-top: 2rem;
 }
 
 .team-member {
   text-align: center;
+}
+
+.team-member:hover {
+  cursor: pointer;
+}
+
+.team-member:hover .member-image {
+  width: 50%;
+}
+
+.team-member:hover .member-name {
+  opacity: 0;
+}
+
+.team-member:hover .member-role {
+  opacity: 1;
+  transform: translateY(-2.5rem);
+}
+
+.team-member:hover .member-info {
+  opacity: 1;
+  transform: translateY(-2.5rem);
 }
 
 .team-member-one {
@@ -37,6 +59,8 @@
   max-width: 300px;
 
   margin-bottom: 1rem;
+
+  transition: width 0.5s ease-out;
 }
 
 .member-name {
@@ -44,6 +68,8 @@
   text-transform: uppercase;
   margin-bottom: 0.25rem;
   font-weight: normal;
+
+  transition: opacity 0.25s ease-out;
 }
 
 .member-role {
@@ -52,6 +78,9 @@
   text-transform: capitalize;
   font-weight: normal;
   font-size: 0.9rem;
+
+  opacity: 0;
+  transition: opacity 0.25s ease-out;
 }
 
 .member-info {
@@ -59,14 +88,38 @@
   font-weight: normal;
   max-width: 20ch;
   margin: 0 auto;
+
+  opacity: 0;
+  transition: opacity 0.25s ease-out;
 }
 
 @media (max-width: 1200px) {
-  .team-section-title {
-    font-size: 2rem;
-  }
-
   .member-image {
     max-width: 200px;
+  }
+}
+
+@media (max-width: 800px) {
+  .team-members {
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+  }
+  .team-member-one {
+    transition: transform 0.7s ease-out, opacity 0.7s ease-out;
+  }
+  .team-member-two {
+    transition: transform 0.7s ease-out, opacity 0.7s ease-out;
+  }
+  .team-member-three {
+    transition: transform 0.7s ease-out, opacity 0.7s ease-out;
+  }
+  .team-member-four {
+    transition: transform 0.7s ease-out, opacity 0.7s ease-out;
+  }
+  .team-member-five {
+    transition: transform 0.7s ease-out, opacity 0.7s ease-out;
+  }
+  .team-member-six {
+    transition: transform 0.7s ease-out, opacity 0.7s ease-out;
   }
 }

@@ -76,7 +76,6 @@
 @media (max-width: 1200px) {
   .roadmap-section-title {
     margin-bottom: 1rem;
-    font-size: 2rem;
   }
 
   .steps {
@@ -88,5 +87,23 @@
   .steps {
     grid-template-columns: 1fr;
     row-gap: 4rem;
+  }
+
+  .step-image {
+    max-width: 300px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .step-one {
+    transition: transform 0.7s ease-out, opacity 0.7s ease-out;
+  }
+  .step-two {
+    transition: transform 0.7s ease-out, opacity 0.7s ease-out;
+  }
+  .step-three {
+    transition: transform 0.7s ease-out, opacity 0.7s ease-out;
+  }
+  .step-four {
+    transition: transform 0.7s ease-out, opacity 0.7s ease-out;
   }
 }

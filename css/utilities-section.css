@@ -38,16 +38,16 @@
   transition: transform 0.7s ease-out 0s, opacity 0.7s ease-out 0s;
 }
 .utility-two {
-  transition: transform 0.7s ease-out 0.3s, opacity 0.7s ease-out 0.3s;
+  transition: transform 0.7s ease-out 0.2s, opacity 0.7s ease-out 0.2s;
 }
 .utility-three {
-  transition: transform 0.7s ease-out 0.6s, opacity 0.7s ease-out 0.6s;
+  transition: transform 0.7s ease-out 0.4s, opacity 0.7s ease-out 0.4s;
 }
 .utility-four {
-  transition: transform 0.7s ease-out 0.9s, opacity 0.7s ease-out 0.9s;
+  transition: transform 0.7s ease-out 0.6s, opacity 0.7s ease-out 0.6s;
 }
 .utility-five {
-  transition: transform 0.7s ease-out 1.2s, opacity 0.7s ease-out 1.2s;
+  transition: transform 0.7s ease-out 0.9s, opacity 0.7s ease-out 0.9s;
 }
 
 .utility-icon {
@@ -62,10 +62,6 @@
 }
 
 @media (max-width: 1200px) {
-  .utilities-top-text-title {
-    font-size: 2rem;
-  }
-
   .utility {
     row-gap: 0.5rem;
   }
@@ -93,6 +89,21 @@
 @media (max-width: 800px) {
   .utilities-bottom {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .utility-one {
+    transition: transform 0.7s ease-out, opacity 0.7s ease-out;
+  }
+  .utility-two {
+    transition: transform 0.7s ease-out, opacity 0.7s ease-out;
+  }
+  .utility-three {
+    transition: transform 0.7s ease-out, opacity 0.7s ease-out;
+  }
+  .utility-four {
+    transition: transform 0.7s ease-out, opacity 0.7s ease-out;
+  }
+  .utility-five {
+    transition: transform 0.7s ease-out, opacity 0.7s ease-out;
   }
 }
 @media (max-width: 600px) {
