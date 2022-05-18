@@ -1,10 +1,18 @@
 /* footer */
 
+footer {
+  margin-top: 4rem;
+}
+
 .footer {
   border-top: 2px solid var(--text-clr);
   padding: 2rem 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  align-items: flex-start;
+}
+
+.email {
 }
 
 .email-input {
@@ -23,12 +31,15 @@
 }
 
 .footer-logo {
-  width: 15rem;
-  justify-self: center;
+  text-align: center;
+}
+
+.footer-logo-img {
+  width: 100%;
+  max-width: 15rem;
 }
 
 .footer-right-col {
-  justify-self: flex-end;
   text-align: right;
 }
 
@@ -45,7 +56,7 @@
 
 .footer-text {
   font-size: 0.75rem;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   line-height: 1.6;
 }
 
@@ -55,10 +66,6 @@
 }
 
 @media (max-width: 1000px) {
-  .footer-logo {
-    width: 10rem;
-  }
-
   .email-label {
     font-size: 0.75rem;
   }
@@ -99,13 +106,14 @@
     width: 15rem;
     display: flex;
     flex-direction: column-reverse;
-    justify-content: flex-end;
     gap: 0.5rem;
     justify-self: center;
+    text-align: center;
   }
 
   .social-links-footer {
     font-size: 1.25rem;
+    justify-content: center;
   }
 
   .footer-text {

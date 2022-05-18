@@ -1,8 +1,5 @@
 /* navbar */
 
-header {
-}
-
 .nav-homepage-sticky {
   position: fixed;
   top: 0;
@@ -43,7 +40,7 @@ header {
 }
 
 .nav-homepage-logo {
-  max-width: 15rem;
+  max-width: 10rem;
 }
 
 .nav-homepage-links {
@@ -52,7 +49,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  gap: 1.5rem;
+  gap: 1rem;
 
   list-style: none;
 }
@@ -61,6 +58,7 @@ header {
   text-decoration: none;
   text-transform: uppercase;
   color: var(--text-clr);
+  font-size: 0.875rem;
 
   transition: color 0.3s ease-in-out;
 }
@@ -73,7 +71,8 @@ header {
 .nav-homepage-social-links {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: 0.5rem;
+  font-size: 0.8rem;
 
   list-style: none;
 }
@@ -84,7 +83,7 @@ header {
 }
 
 .hamburger {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   display: none;
   cursor: pointer;
   transition: color 0.3s ease-in-out;
@@ -107,19 +106,18 @@ header {
   }
 
   .nav-homepage-links {
-    gap: 1rem;
+    gap: 0.875rem;
   }
 
   .nav-homepage-link {
-    font-size: 0.9rem;
+    font-size: 0.75rem;
+  }
+  .social-link {
+    font-size: 0.7rem;
   }
 }
 
 @media (max-width: 1000px) {
-  .nav-homepage-logo {
-    max-width: 10rem;
-  }
-
   .nav-homepage-links {
     display: block;
     position: absolute;
@@ -144,7 +142,8 @@ header {
     transform: translateX(0px);
   }
 
-  .nav-homepage-link {
+  .nav-homepage-link,
+  .social-link {
     font-size: 0.9rem;
   }
 

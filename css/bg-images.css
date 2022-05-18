@@ -27,6 +27,12 @@
 }
 
 .bg-img-4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url('../img/CONTAINERIMAGES/MT_JUNKYARD.jpg');
+  background-size: contain;
+}
+
+.bg-img-5 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
     url('../img/CONTAINERIMAGES/MT_Medium_banner.jpg');
   background-size: contain;

@@ -48,6 +48,12 @@
     <!-- autoshop section styles -->
     <link rel="stylesheet" href="./css/autoshop-section.css" />
 
+    <!-- contact us section styles -->
+    <link rel="stylesheet" href="./css/contact-us.css" />
+
+    <!-- contact us section styles -->
+    <link rel="stylesheet" href="./css/gallery.css" />
+
     <!-- footer styles -->
     <link rel="stylesheet" href="./css/footer.css" />
 
@@ -65,24 +71,45 @@
 
     <!-- fade in -->
     <script src="./js/fadein.js" defer></script>
+
+    <!-- gallery -->
+    <script src="./js/gallery.js" defer></script>
   </head>
   <body>
     <!-- nav homepage start-->
     <nav class="nav-homepage-sticky">
       <div class="container nav-homepage">
-        <img
-          src="./img/HOME PAGE/logo-2.png"
-          alt="logo"
-          class="nav-homepage-logo"
-        />
+        <a href="./homepage.html" class="homepage-link">
+          <img
+            src="./img/HOME PAGE/logo-2.png"
+            alt="logo"
+            class="nav-homepage-logo"
+          />
+        </a>
 
         <ul class="nav-homepage-links">
-          <li><a href="#" class="nav-homepage-link">buy a metatuner</a></li>
-          <li><a href="#" class="nav-homepage-link">the collection</a></li>
-          <li><a href="#" class="nav-homepage-link">utilities</a></li>
-          <li><a href="#" class="nav-homepage-link">roadmap</a></li>
-          <li><a href="#" class="nav-homepage-link">the team</a></li>
-          <li><a href="#" class="nav-homepage-link">autoshop</a></li>
+          <li>
+            <a href="#buy-metatuner" class="nav-homepage-link"
+              >buy a metatuner</a
+            >
+          </li>
+          <li>
+            <a href="#collection" class="nav-homepage-link">the collection</a>
+          </li>
+          <li><a href="#utilities" class="nav-homepage-link">utilities</a></li>
+          <li>
+            <a href="#roadmap" class="nav-homepage-link">roadmap</a>
+          </li>
+          <li><a href="#team" class="nav-homepage-link">the team</a></li>
+          <li>
+            <a href="#auto-shop" class="nav-homepage-link">autoshop</a>
+          </li>
+          <li>
+            <a href="#contact-us" class="nav-homepage-link">contact us</a>
+          </li>
+          <li>
+            <a href="#gallery" class="nav-homepage-link">gallery</a>
+          </li>
 
           <ul class="nav-homepage-social-links">
             <li>
@@ -120,13 +147,14 @@
     <!-- bg image one end -->
 
     <!-- welcome section start  -->
-    <section class="welcome">
+    <section class="welcome" id="welcome">
       <div class="container welcome-section">
         <div class="welcome-section-text">
           <h2 class="section-title welcome-section-title fade-in">
             welcome to the resistance
           </h2>
-          <p class="welcome-section-desc fade-in">
+
+          <p class="welcome-section-desc fade-in welcome-section-desc-desktop">
             The tuner scene is under attack. There is an ever increasing trend
             of modified cars being crushed, car meetups disbanded, and racing
             getting punished harder than ever. At the same time, “The Machine”
@@ -139,6 +167,25 @@
             staying true to themselves, remaining in the fast lane, and most
             importantly, staying in the driver’s seat.
           </p>
+
+          <p class="welcome-section-desc welcome-section-desc-mobile fade-in">
+            The tuner scene is under attack. There is an ever increasing trend
+            of modified cars being crushed, car meetups disbanded, and racing
+            getting punished harder than ever.
+          </p>
+          <span class="read-more">... Read More</span>
+
+          <span class="read-more-text fade-in">
+            At the same time, “The Machine” continues to seek more and more
+            power. Under the guise of convenience, it continues to “steer” the
+            masses into riding autonomous vehicles. In actuality, it’s just an
+            attempt to take away more freedoms; having people take a “backseat”
+            to their own lives. The Meta Tuners are an underground resistance
+            who are “attuned” to the true intentions of The Machine, outwardly
+            defying its plans by staying true to themselves, remaining in the
+            fast lane, and most importantly, staying in the driver’s seat.
+          </span>
+
           <a href="#" class="welcome-section-link fade-in"
             >Are you ready to take the wheel?</a
           >
@@ -194,7 +241,7 @@
     <!-- bg img two end-->
 
     <!-- collection section start -->
-    <section class="collection">
+    <section class="collection" id="collection">
       <div class="container collection-section">
         <h2 class="section-title collection-section-title fade-in">
           the collection
@@ -211,386 +258,295 @@
         </p>
       </div>
 
-      <div class="collection-images-container">
-        <div class="collection-bg">
-          <img
-            src="./img/COLLECTION/Collection-Character-Image.jpg"
-            class="collection-img fade-in"
-            alt=""
-          />
-        </div>
+      <div class="video-bg">
+        <video src="./vid/collection-vid.mp4" class="video" autoplay></video>
       </div>
     </section>
     <!-- collection section end -->
 
     <!-- slider section start -->
-    <section class="slider">
+    <section class="slider" id="buy-metatuner">
       <div class="container slider-section">
-        <div class="charector-tabs">
-          <div class="charector-tab jdm btn active-tab fade-in" data-tab="1">
-            JDM
-          </div>
-          <div class="charector-tab exotic btn fade-in" data-tab="2">
-            exotic
-          </div>
-          <div class="charector-tab muscle btn fade-in" data-tab="3">
-            muscle
-          </div>
-          <div class="charector-tab euro btn fade-in" data-tab="4">euro</div>
+        <h2 class="section-title slider-section-title">Choose Your Faction</h2>
+
+        <!-- slider control left -->
+        <div class="slider-control fade-in">
+          <i class="fa-solid fa-angle-left slider-left"></i>
         </div>
 
-        <!-- slider item one -->
-        <div class="slider-item slider-item-1 active-slider-item">
-          <div class="slider-text">
-            <h2 class="slider-item-title fade-in">jdm</h2>
-            <h3 class="slider-item-subtitle fade-in">"The imposters"</h3>
-            <p class="slider-item-desc fade-in">
-              It’s been 50 years since the conception of the JDM Tuner scene.
-              This group formed the early stages of drifting, modifying and
-              racing. Now, the elicit street racers go under cover during the
-              day, importing car parts from all over the world, equipping the
-              Resistance for the battle against The Machine.
-            </p>
-            <h2 class="slider-item-info fade-in">Info</h2>
-            <ul class="slider-item-links fade-in">
-              <li class="slider-item-link">
-                Meta Tuners
-                <a href="#">Opensea <i class="fa-solid fa-arrow-right"></i></a>
-              </li>
-              <li class="slider-item-link">
-                Meta Tuners
-                <a href="#"
-                  >LooksRare <i class="fa-solid fa-arrow-right"></i
-                ></a>
-              </li>
-              <li class="slider-item-link">
-                Meta Tuners
-                <a href="#">Rarity <i class="fa-solid fa-arrow-right"></i></a>
-              </li>
-              <li class="slider-item-link">
-                Meta Tuners
-                <a href="#"
-                  >Analytics <i class="fa-solid fa-arrow-right"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-          <div class="slider-images">
-            <img
-              src="./img/COLLECTION/JDM Character.png"
-              alt="jdm"
-              class="charector-img fade-in"
-            />
-
-            <div class="marquee fade-in">
-              <ul class="marquee-content">
-                <li>
-                  <img src="./img/CAROUSELIMAGES/carousel-img1.png" alt="" />
+        <!-- slider -->
+        <div class="slider-main fade-in">
+          <!-- slider item one -->
+          <div class="slider-item slider-item-1">
+            <div class="slider-text">
+              <h2 class="slider-item-title">jdm</h2>
+              <h3 class="slider-item-subtitle">"The imposters"</h3>
+              <p class="slider-item-desc">
+                It’s been 50 years since the conception of the JDM Tuner scene.
+                This group formed the early stages of drifting, modifying and
+                racing. Now, the elicit street racers go under cover during the
+                day, importing car parts from all over the world, equipping the
+                Resistance for the battle against The Machine.
+              </p>
+              <h2 class="slider-item-info">Info</h2>
+              <ul class="slider-item-links">
+                <li class="slider-item-link">
+                  Meta Tuners
+                  <a href="#"
+                    >Opensea <i class="fa-solid fa-arrow-right"></i
+                  ></a>
                 </li>
-                <li>
-                  <img src="./img/CAROUSELIMAGES/carousel-img2.png" alt="" />
+                <li class="slider-item-link">
+                  Meta Tuners
+                  <a href="#"
+                    >LooksRare <i class="fa-solid fa-arrow-right"></i
+                  ></a>
                 </li>
-                <li>
-                  <img src="./img/CAROUSELIMAGES/carousel-img3.png" alt="" />
+                <li class="slider-item-link">
+                  Meta Tuners
+                  <a href="#">Rarity <i class="fa-solid fa-arrow-right"></i></a>
                 </li>
-                <li>
-                  <img src="./img/CAROUSELIMAGES/carousel-img4.png" alt="" />
-                </li>
-                <li>
-                  <img src="./img/CAROUSELIMAGES/carousel-img5.png" alt="" />
-                </li>
-                <li>
-                  <img src="./img/CAROUSELIMAGES/carousel-img6.png" alt="" />
-                </li>
-                <li>
-                  <img src="./img/CAROUSELIMAGES/carousel-img7.png" alt="" />
-                </li>
-                <li>
-                  <img src="./img/CAROUSELIMAGES/carousel-img8.png" alt="" />
-                </li>
-                <li>
-                  <img src="./img/CAROUSELIMAGES/carousel-img1.png" alt="" />
-                </li>
-                <li>
-                  <img src="./img/CAROUSELIMAGES/carousel-img2.png" alt="" />
-                </li>
-                <li>
-                  <img src="./img/CAROUSELIMAGES/carousel-img3.png" alt="" />
-                </li>
-                <li>
-                  <img src="./img/CAROUSELIMAGES/carousel-img4.png" alt="" />
+                <li class="slider-item-link">
+                  Meta Tuners
+                  <a href="#"
+                    >Analytics <i class="fa-solid fa-arrow-right"></i
+                  ></a>
                 </li>
               </ul>
             </div>
-          </div>
-
-          <a href="#" class="btn slider-btn fade-in">mint coming soon</a>
-        </div>
-
-        <!-- slider item 2 -->
-        <div class="slider-item slider-item-2">
-          <div class="slider-text">
-            <h2 class="slider-item-title">EXOTIC</h2>
-            <h3 class="slider-item-subtitle">"The Widowmakers"</h3>
-            <p class="slider-item-desc">
-              Coined “The Widowmakes” by the scene due to their insanely fast
-              horsepower numbers and expensive gear. The Exotics play by their
-              own rules. Exotics are amongst the most influential Tuners in
-              Hardrive City. While some Exotic Tuners use their HP and clout to
-              assist the Resistance, others use it for self-seeking missions
-              within the city.
-            </p>
-            <h2 class="slider-item-info">Info</h2>
-            <ul class="slider-item-links">
-              <li class="slider-item-link">
-                Meta Tuners
-                <a href="#">Opensea <i class="fa-solid fa-arrow-right"></i></a>
-              </li>
-              <li class="slider-item-link">
-                Meta Tuners
-                <a href="#"
-                  >LooksRare <i class="fa-solid fa-arrow-right"></i
-                ></a>
-              </li>
-              <li class="slider-item-link">
-                Meta Tuners
-                <a href="#">Rarity <i class="fa-solid fa-arrow-right"></i></a>
-              </li>
-              <li class="slider-item-link">
-                Meta Tuners
-                <a href="#"
-                  >Analytics <i class="fa-solid fa-arrow-right"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-          <div class="slider-images">
-            <img
-              src="./img/COLLECTION/EXOTIC Character.png"
-              alt="jdm"
-              class="charector-img"
-            />
-
-            <div class="marquee">
-              <ul class="marquee-content">
-                <li>
-                  <img src="./img/CAROUSELIMAGES/carousel-img1.png" alt="" />
-                </li>
-                <li>
-                  <img src="./img/CAROUSELIMAGES/carousel-img2.png" alt="" />
-                </li>
-                <li>
-                  <img src="./img/CAROUSELIMAGES/carousel-img3.png" alt="" />
-                </li>
-                <li>
-                  <img src="./img/CAROUSELIMAGES/carousel-img4.png" alt="" />
-                </li>
-                <li>
-                  <img src="./img/CAROUSELIMAGES/carousel-img5.png" alt="" />
-                </li>
-                <li>
-                  <img src="./img/CAROUSELIMAGES/carousel-img6.png" alt="" />
-                </li>
-                <li>
-                  <img src="./img/CAROUSELIMAGES/carousel-img7.png" alt="" />
-                </li>
-                <li>
-                  <img src="./img/CAROUSELIMAGES/carousel-img8.png" alt="" />
-                </li>
-                <li>
-                  <img src="./img/CAROUSELIMAGES/carousel-img1.png" alt="" />
-                </li>
-                <li>
-                  <img src="./img/CAROUSELIMAGES/carousel-img2.png" alt="" />
-                </li>
-                <li>
-                  <img src="./img/CAROUSELIMAGES/carousel-img3.png" alt="" />
-                </li>
-                <li>
-                  <img src="./img/CAROUSELIMAGES/carousel-img4.png" alt="" />
-                </li>
-              </ul>
+            <div class="slider-images" data-tilt data-tilt-max="10">
+              <img
+                src="./img/COLLECTION/JDM Character.png"
+                alt="jdm"
+                class="charector-img"
+              />
             </div>
           </div>
 
-          <a href="#" class="btn slider-btn">mint coming soon</a>
-        </div>
-
-        <!-- slider item three -->
-        <div class="slider-item slider-item-3">
-          <div class="slider-text">
-            <h2 class="slider-item-title">MUSCLE</h2>
-            <h3 class="slider-item-subtitle">"The GearHeads"</h3>
-            <p class="slider-item-desc">
-              Through their heritage of naturally aspirated technology and
-              internal combustion engines; The Muscle Tuners supply the
-              Resistance with the much needed power to fight off the Machine.
-              With their traditional tuning methods, the Muscle Tuners are not
-              as easily affected by electrical and malware attacks caused by the
-              Machine.
-            </p>
-            <h2 class="slider-item-info">Info</h2>
-            <ul class="slider-item-links">
-              <li class="slider-item-link">
-                Meta Tuners
-                <a href="#">Opensea <i class="fa-solid fa-arrow-right"></i></a>
-              </li>
-              <li class="slider-item-link">
-                Meta Tuners
-                <a href="#"
-                  >LooksRare <i class="fa-solid fa-arrow-right"></i
-                ></a>
-              </li>
-              <li class="slider-item-link">
-                Meta Tuners
-                <a href="#">Rarity <i class="fa-solid fa-arrow-right"></i></a>
-              </li>
-              <li class="slider-item-link">
-                Meta Tuners
-                <a href="#"
-                  >Analytics <i class="fa-solid fa-arrow-right"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-          <div class="slider-images">
-            <img
-              src="./img/COLLECTION/MUSCLE Character.png"
-              alt="jdm"
-              class="charector-img"
-            />
-
-            <div class="marquee">
-              <ul class="marquee-content">
-                <li>
-                  <img src="./img/CAROUSELIMAGES/carousel-img1.png" alt="" />
+          <!-- slider item 2 -->
+          <div class="slider-item slider-item-2">
+            <div class="slider-text">
+              <h2 class="slider-item-title">EXOTIC</h2>
+              <h3 class="slider-item-subtitle">"The Widowmakers"</h3>
+              <p class="slider-item-desc">
+                Coined “The Widowmakes” by the scene due to their insanely fast
+                horsepower numbers and expensive gear. The Exotics play by their
+                own rules. Exotics are amongst the most influential Tuners in
+                Hardrive City. While some Exotic Tuners use their HP and clout
+                to assist the Resistance, others use it for self-seeking
+                missions within the city.
+              </p>
+              <h2 class="slider-item-info">Info</h2>
+              <ul class="slider-item-links">
+                <li class="slider-item-link">
+                  Meta Tuners
+                  <a href="#"
+                    >Opensea <i class="fa-solid fa-arrow-right"></i
+                  ></a>
                 </li>
-                <li>
-                  <img src="./img/CAROUSELIMAGES/carousel-img2.png" alt="" />
+                <li class="slider-item-link">
+                  Meta Tuners
+                  <a href="#"
+                    >LooksRare <i class="fa-solid fa-arrow-right"></i
+                  ></a>
                 </li>
-                <li>
-                  <img src="./img/CAROUSELIMAGES/carousel-img3.png" alt="" />
+                <li class="slider-item-link">
+                  Meta Tuners
+                  <a href="#">Rarity <i class="fa-solid fa-arrow-right"></i></a>
                 </li>
-                <li>
-                  <img src="./img/CAROUSELIMAGES/carousel-img4.png" alt="" />
-                </li>
-                <li>
-                  <img src="./img/CAROUSELIMAGES/carousel-img5.png" alt="" />
-                </li>
-                <li>
-                  <img src="./img/CAROUSELIMAGES/carousel-img6.png" alt="" />
-                </li>
-                <li>
-                  <img src="./img/CAROUSELIMAGES/carousel-img7.png" alt="" />
-                </li>
-                <li>
-                  <img src="./img/CAROUSELIMAGES/carousel-img8.png" alt="" />
-                </li>
-                <li>
-                  <img src="./img/CAROUSELIMAGES/carousel-img1.png" alt="" />
-                </li>
-                <li>
-                  <img src="./img/CAROUSELIMAGES/carousel-img2.png" alt="" />
-                </li>
-                <li>
-                  <img src="./img/CAROUSELIMAGES/carousel-img3.png" alt="" />
-                </li>
-                <li>
-                  <img src="./img/CAROUSELIMAGES/carousel-img4.png" alt="" />
+                <li class="slider-item-link">
+                  Meta Tuners
+                  <a href="#"
+                    >Analytics <i class="fa-solid fa-arrow-right"></i
+                  ></a>
                 </li>
               </ul>
             </div>
-          </div>
-
-          <a href="#" class="btn slider-btn">mint coming soon</a>
-        </div>
-
-        <!-- slider item four -->
-        <div class="slider-item slider-item-4">
-          <div class="slider-text">
-            <h2 class="slider-item-title">EURO</h2>
-            <h3 class="slider-item-subtitle">"The Engineers"</h3>
-            <p class="slider-item-desc">
-              Known for their high performance and engineering skills, the Euro
-              Tuners use their expertise to equip the Resistance with cutting
-              edge technology. Euro Tuners have also been syphoning car-tech
-              intel from deep within The Machines vaults in Hardrive City.
-            </p>
-            <h2 class="slider-item-info">Info</h2>
-            <ul class="slider-item-links">
-              <li class="slider-item-link">
-                Meta Tuners
-                <a href="#">Opensea <i class="fa-solid fa-arrow-right"></i></a>
-              </li>
-              <li class="slider-item-link">
-                Meta Tuners
-                <a href="#"
-                  >LooksRare <i class="fa-solid fa-arrow-right"></i
-                ></a>
-              </li>
-              <li class="slider-item-link">
-                Meta Tuners
-                <a href="#">Rarity <i class="fa-solid fa-arrow-right"></i></a>
-              </li>
-              <li class="slider-item-link">
-                Meta Tuners
-                <a href="#"
-                  >Analytics <i class="fa-solid fa-arrow-right"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-          <div class="slider-images">
-            <img
-              src="./img/COLLECTION/EURO Character.png"
-              alt="jdm"
-              class="charector-img"
-            />
-
-            <div class="marquee">
-              <ul class="marquee-content">
-                <li>
-                  <img src="./img/CAROUSELIMAGES/carousel-img1.png" alt="" />
-                </li>
-                <li>
-                  <img src="./img/CAROUSELIMAGES/carousel-img2.png" alt="" />
-                </li>
-                <li>
-                  <img src="./img/CAROUSELIMAGES/carousel-img3.png" alt="" />
-                </li>
-                <li>
-                  <img src="./img/CAROUSELIMAGES/carousel-img4.png" alt="" />
-                </li>
-                <li>
-                  <img src="./img/CAROUSELIMAGES/carousel-img5.png" alt="" />
-                </li>
-                <li>
-                  <img src="./img/CAROUSELIMAGES/carousel-img6.png" alt="" />
-                </li>
-                <li>
-                  <img src="./img/CAROUSELIMAGES/carousel-img7.png" alt="" />
-                </li>
-                <li>
-                  <img src="./img/CAROUSELIMAGES/carousel-img8.png" alt="" />
-                </li>
-                <li>
-                  <img src="./img/CAROUSELIMAGES/carousel-img1.png" alt="" />
-                </li>
-                <li>
-                  <img src="./img/CAROUSELIMAGES/carousel-img2.png" alt="" />
-                </li>
-                <li>
-                  <img src="./img/CAROUSELIMAGES/carousel-img3.png" alt="" />
-                </li>
-                <li>
-                  <img src="./img/CAROUSELIMAGES/carousel-img4.png" alt="" />
-                </li>
-              </ul>
+            <div class="slider-images" data-tilt data-tilt-max="10">
+              <img
+                src="./img/COLLECTION/EXOTIC Character.png"
+                alt="jdm"
+                class="charector-img"
+              />
             </div>
           </div>
 
-          <a href="#" class="btn slider-btn">mint coming soon</a>
+          <!-- slider item three -->
+          <div class="slider-item slider-item-3">
+            <div class="slider-text">
+              <h2 class="slider-item-title">MUSCLE</h2>
+              <h3 class="slider-item-subtitle">"The GearHeads"</h3>
+              <p class="slider-item-desc">
+                Through their heritage of naturally aspirated technology and
+                internal combustion engines; The Muscle Tuners supply the
+                Resistance with the much needed power to fight off the Machine.
+                With their traditional tuning methods, the Muscle Tuners are not
+                as easily affected by electrical and malware attacks caused by
+                the Machine.
+              </p>
+              <h2 class="slider-item-info">Info</h2>
+              <ul class="slider-item-links">
+                <li class="slider-item-link">
+                  Meta Tuners
+                  <a href="#"
+                    >Opensea <i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                </li>
+                <li class="slider-item-link">
+                  Meta Tuners
+                  <a href="#"
+                    >LooksRare <i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                </li>
+                <li class="slider-item-link">
+                  Meta Tuners
+                  <a href="#">Rarity <i class="fa-solid fa-arrow-right"></i></a>
+                </li>
+                <li class="slider-item-link">
+                  Meta Tuners
+                  <a href="#"
+                    >Analytics <i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="slider-images" data-tilt data-tilt-max="10">
+              <img
+                src="./img/COLLECTION/MUSCLE Character.png"
+                alt="jdm"
+                class="charector-img"
+              />
+            </div>
+          </div>
+
+          <!-- slider item four -->
+          <div class="slider-item slider-item-4">
+            <div class="slider-text">
+              <h2 class="slider-item-title">EURO</h2>
+              <h3 class="slider-item-subtitle">"The Engineers"</h3>
+              <p class="slider-item-desc">
+                Known for their high performance and engineering skills, the
+                Euro Tuners use their expertise to equip the Resistance with
+                cutting edge technology. Euro Tuners have also been syphoning
+                car-tech intel from deep within The Machines vaults in Hardrive
+                City.
+              </p>
+              <h2 class="slider-item-info">Info</h2>
+              <ul class="slider-item-links">
+                <li class="slider-item-link">
+                  Meta Tuners
+                  <a href="#"
+                    >Opensea <i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                </li>
+                <li class="slider-item-link">
+                  Meta Tuners
+                  <a href="#"
+                    >LooksRare <i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                </li>
+                <li class="slider-item-link">
+                  Meta Tuners
+                  <a href="#">Rarity <i class="fa-solid fa-arrow-right"></i></a>
+                </li>
+                <li class="slider-item-link">
+                  Meta Tuners
+                  <a href="#"
+                    >Analytics <i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="slider-images" data-tilt data-tilt-max="10">
+              <img
+                src="./img/COLLECTION/EURO Character.png"
+                alt="jdm"
+                class="charector-img"
+              />
+            </div>
+          </div>
         </div>
+
+        <!-- slider control right -->
+        <div class="slider-control fade-in">
+          <i class="fa-solid fa-angle-right slider-right"></i>
+        </div>
+
+        <!-- gallery scroll -->
+        <div class="marquee-vertical fade-in">
+          <ul class="marquee-content-vertical">
+            <li>
+              <img src="./img/CAROUSELIMAGES/carousel-img1.png" alt="" />
+            </li>
+            <li>
+              <img src="./img/CAROUSELIMAGES/carousel-img2.png" alt="" />
+            </li>
+            <li>
+              <img src="./img/CAROUSELIMAGES/carousel-img3.png" alt="" />
+            </li>
+            <li>
+              <img src="./img/CAROUSELIMAGES/carousel-img4.png" alt="" />
+            </li>
+            <li>
+              <img src="./img/CAROUSELIMAGES/carousel-img5.png" alt="" />
+            </li>
+            <li>
+              <img src="./img/CAROUSELIMAGES/carousel-img6.png" alt="" />
+            </li>
+            <li>
+              <img src="./img/CAROUSELIMAGES/carousel-img7.png" alt="" />
+            </li>
+            <li>
+              <img src="./img/CAROUSELIMAGES/carousel-img8.png" alt="" />
+            </li>
+            <li>
+              <img src="./img/CAROUSELIMAGES/carousel-img1.png" alt="" />
+            </li>
+            <li>
+              <img src="./img/CAROUSELIMAGES/carousel-img2.png" alt="" />
+            </li>
+            <li>
+              <img src="./img/CAROUSELIMAGES/carousel-img3.png" alt="" />
+            </li>
+            <li>
+              <img src="./img/CAROUSELIMAGES/carousel-img4.png" alt="" />
+            </li>
+          </ul>
+        </div>
+
+        <!-- slider controls dots -->
+        <div class="slider-dots">
+          <img
+            src="./img/slider/jdm-dot.svg"
+            alt=""
+            class="dot active-dot"
+            data-slide="0"
+          />
+          <div class="line"></div>
+          <img
+            src="./img/slider/exotic-dot.svg"
+            data-slide="1"
+            alt=""
+            class="dot"
+          />
+          <div class="line"></div>
+          <img
+            src="./img/slider/muscle-dot.svg"
+            data-slide="2"
+            alt=""
+            class="dot"
+          />
+          <div class="line"></div>
+          <img
+            src="./img/slider/euro-dot.svg"
+            alt=""
+            class="dot"
+            data-slide="3"
+          />
+        </div>
+
+        <!-- cta -->
+        <a href="#" class="btn slider-btn fade-in">mint coming soon</a>
       </div>
     </section>
     <!-- slider section end -->
@@ -600,7 +556,7 @@
     <!-- bg image end -->
 
     <!-- utilities section start -->
-    <section class="utilities">
+    <section class="utilities" id="utilities">
       <div class="container utilities-section">
         <div class="utilities-top">
           <div class="utilities-top-text">
@@ -615,7 +571,7 @@
             </p>
           </div>
           <img
-            src="./img/UTILITIES/key_background_gif.gif"
+            src="./img/UTILITIES/KEY_Infinite_loop.gif"
             alt=""
             class="utilities-top-img fade-in"
           />
@@ -625,6 +581,7 @@
           <!-- utility one -->
           <div class="utility utility-one fade-in">
             <img src="./img/UTILITIES/Icon1.png" alt="" class="utility-icon" />
+            <h3 class="utility-title">1. Membership</h3>
             <p class="utility-text">
               As the battle against the Machine rages on, your Meta Tuner
               Genesis NFTs will act as your membership token to the Resistance
@@ -635,6 +592,7 @@
           <!-- utility two -->
           <div class="utility utility-two fade-in">
             <img src="./img/UTILITIES/Icon2.png" alt="" class="utility-icon" />
+            <h3 class="utility-title">2. Usage</h3>
             <p class="utility-text">
               8,000 Unique Meta Tuners is your digital key to firing up your
               engine for cruising and entering Hardrive City.
@@ -644,6 +602,7 @@
           <!-- utility three -->
           <div class="utility utility-three fade-in">
             <img src="./img/UTILITIES/Icon3.png" alt="" class="utility-icon" />
+            <h3 class="utility-title">3. Ownership</h3>
             <p class="utility-text">
               Your unique NFT is 100% owned by you! All rights, artwork and
               licensing can be utilized any way you see fit.
@@ -653,6 +612,7 @@
           <!-- utility four -->
           <div class="utility utility-four fade-in">
             <img src="./img/UTILITIES/Icon4.png" alt="" class="utility-icon" />
+            <h3 class="utility-title">4. Autoshop</h3>
             <p class="utility-text">
               Ownership gives you access to “The Auto Shop”. The Meta Tuners
               official Web 3 digital marketplace
@@ -662,6 +622,7 @@
           <!-- utility five -->
           <div class="utility utility-five fade-in">
             <img src="./img/UTILITIES/Icon5.png" alt="" class="utility-icon" />
+            <h3 class="utility-title">5. Governance</h3>
             <p class="utility-text">
               Meta Tuners Genesis NFT owners have governance rights within the
               DAO that will be coming in phase 3 over the Meta Tuners digital
@@ -673,8 +634,12 @@
     </section>
     <!-- utilities section end -->
 
+    <!-- bg image start -->
+    <div class="bg-img bg-img-4"></div>
+    <!-- bg image end -->
+
     <!-- roadmap section start -->
-    <section class="roadmap">
+    <section class="roadmap" id="roadmap">
       <div class="container roadmap-section">
         <h2 class="section-title roadmap-section-title fade-in">roadmap</h2>
         <p class="roadmap-desc fade-in">
@@ -691,9 +656,9 @@
             <div class="step-info">
               <h3 class="step-title">1st gear</h3>
               <ul>
-                <li>- website 2.0</li>
-                <li>- Marketing Begins</li>
-                <li>- Meta Tuners Mint 8,000 NFT’s at 0.08 ETH</li>
+                <li>website 2.0</li>
+                <li>Marketing Begins</li>
+                <li>Meta Tuners Mint 8,000 NFT’s at 0.08 ETH</li>
               </ul>
             </div>
           </div>
@@ -706,9 +671,9 @@
             <div class="step-info">
               <h3 class="step-title">2nd gear</h3>
               <ul>
-                <li>- The Garage Door Opens</li>
-                <li>- Decentraland and Somnium Space Metaverse Development</li>
-                <li>- IRL Meetup</li>
+                <li>The Garage Door Opens</li>
+                <li>Decentraland and Somnium Space Metaverse Development</li>
+                <li>IRL Meetup</li>
               </ul>
             </div>
           </div>
@@ -721,10 +686,10 @@
             <div class="step-info">
               <h3 class="step-title">3rd gear</h3>
               <ul>
-                <li>- “Parking” your Tuner</li>
-                <li>- Hyperkey Airdrop</li>
-                <li>- DAO Implementation Begins</li>
-                <li>- First DAO Proposal</li>
+                <li>“Parking” your Tuner</li>
+                <li>Hyperkey Airdrop</li>
+                <li>DAO Implementation Begins</li>
+                <li>First DAO Proposal</li>
               </ul>
             </div>
           </div>
@@ -737,10 +702,10 @@
             <div class="step-info">
               <h3 class="step-title">4th gear</h3>
               <ul>
-                <li>- Mega Tuners</li>
-                <li>- IRL Events</li>
-                <li>- IRL Meta Tuners Headquarters</li>
-                <li>- Team Expansion</li>
+                <li>Mega Tuners</li>
+                <li>IRL Events</li>
+                <li>IRL Meta Tuners Headquarters</li>
+                <li>Team Expansion</li>
               </ul>
             </div>
           </div>
@@ -750,11 +715,11 @@
     <!-- roadmap section end -->
 
     <!-- bg image start -->
-    <div class="bg-img bg-img-4"></div>
+    <div class="bg-img bg-img-5"></div>
     <!-- bg image end -->
 
     <!-- team section -->
-    <section class="team">
+    <section class="team" id="team">
       <div class="container team-section">
         <h2 class="section-title team-section-title">the team</h2>
 
@@ -811,10 +776,11 @@
     </section>
 
     <!-- auto shop start -->
-    <section class="auto-shop">
+    <section class="auto-shop" id="auto-shop">
       <div class="container auto-shop-section">
         <h2 class="auto-shop-section-title section-title fade-in">
-          the auto shop (coming soon)
+          the auto shop<br />
+          (coming soon)
         </h2>
       </div>
 
@@ -823,6 +789,83 @@
       </div>
     </section>
     <!-- auto shop end -->
+
+    <!-- contact section start -->
+    <section id="contact-us" class="contact">
+      <div class="container contact-us-section">
+        <div class="contact-us-logo fade-in">
+          <img
+            src="./img/SPLASH PAGE/MetaTuners_M.png"
+            alt=""
+            class="contact-us-logo-img"
+          />
+        </div>
+        <h2 class="section-title contact-us-section-title">
+          ARE YOU READY TO TAKE THE WHEEL?
+        </h2>
+
+        <form action="" class="contact-us-form fade-in">
+          <p class="form-element">
+            <input type="text" name="name" id="name" placeholder="Name" />
+          </p>
+          <p class="form-element">
+            <input type="email" name="email" id="email" placeholder="Email" />
+          </p>
+
+          <p class="form-element form-btn">
+            <button class="form-btn-btn btn">Stay up to date</button>
+          </p>
+        </form>
+
+        <div class="contact-us-links fade-in">
+          <a class="contact-us-link contact-us-link-1">
+            <i class="fa-regular fa-envelope email-icon"></i> Contact Us
+          </a>
+          <a class="contact-us-link contact-us-link-2">
+            <i class="fa-regular fa-envelope email-icon"></i> Partnership
+            Inquiries
+          </a>
+          <a class="contact-us-link contact-us-link-3">
+            <i class="fa-regular fa-envelope email-icon"></i> Jobs
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- contact section end -->
+
+    <!-- gallery sections start -->
+    <section class="gallery" id="gallery">
+      <div class="container gallery-section">
+        <h2 class="section-title gallery-section-title fade-in">
+          Tuner <span class="blue-clr">Art</span>
+        </h2>
+
+        <div class="gallery-main fade-in">
+          <ul class="gallery-content">
+            <li><img src="./img/gallery/Galleryimage1.jpg" alt="" /></li>
+            <li><img src="./img/gallery/Galleryimage2.jpg" alt="" /></li>
+            <li><img src="./img/gallery/Galleryimage3.jpg" alt="" /></li>
+            <li><img src="./img/gallery/Galleryimage4.jpg" alt="" /></li>
+            <li><img src="./img/gallery/Galleryimage5.jpg" alt="" /></li>
+            <li><img src="./img/gallery/Galleryimage6.jpg" alt="" /></li>
+            <li><img src="./img/gallery/Galleryimage7.jpg" alt="" /></li>
+            <li><img src="./img/gallery/Galleryimage8.jpg" alt="" /></li>
+            <li><img src="./img/gallery/Galleryimage1.jpg" alt="" /></li>
+            <li><img src="./img/gallery/Galleryimage2.jpg" alt="" /></li>
+            <li><img src="./img/gallery/Galleryimage3.jpg" alt="" /></li>
+          </ul>
+        </div>
+
+        <p class="gallery-text fade-in">
+          The Meta Tuners is a project driven by our love for creativity,
+          community, and passion for the automotive world.
+          <br /><br />
+          Take a glimpse of the artwork that is expanding within the Meta Tuners
+          universe.
+        </p>
+      </div>
+    </section>
+    <!-- gallery sections end -->
 
     <!-- footer start -->
     <footer>
@@ -833,7 +876,13 @@
           <input type="email" class="email-input" placeholder="email address" />
         </div>
 
-        <img src="./img/HOME PAGE/logo-2.png" class="footer-logo" alt="" />
+        <div class="footer-logo">
+          <img
+            src="./img/HOME PAGE/logo-2.png"
+            class="footer-logo-img"
+            alt=""
+          />
+        </div>
 
         <div class="footer-right-col">
           <div class="social-links-footer">

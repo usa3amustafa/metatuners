@@ -12,18 +12,32 @@
 
 .welcome-section-desc {
   line-height: 1.6;
-  margin-bottom: 1rem;
+  display: inline;
 
+  transition: transform 0.7s ease-out, opacity 0.7s ease-out;
+}
+
+.welcome-section-desc-desktop {
+  display: block;
+}
+.welcome-section-desc-mobile {
+  display: none;
+}
+
+.read-more-text {
+  line-height: 1.6;
+  display: none;
   transition: transform 0.7s ease-out, opacity 0.7s ease-out;
 }
 
 .welcome-section-link {
   color: var(--blue-clr);
-  display: inline-block;
+  display: block;
   text-decoration: none;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 
   transition: transform 0.7s ease-out, opacity 0.7s ease-out;
+  margin-top: 1rem;
 }
 
 .welcome-section-social-links {
@@ -43,6 +57,10 @@
   color: var(--text-clr);
 }
 
+.margin-top {
+  margin-top: 4rem;
+}
+
 .welcome-section-left-col {
   position: relative;
 }
@@ -57,14 +75,11 @@
 }
 
 .mint-btn-container-img {
-  width: 70%;
+  width: 75%;
   margin: 0 auto;
 }
 
 .mint-container-btn {
-  padding: 1rem 2rem;
-  font-size: 0.875rem;
-
   position: absolute;
   top: 38%;
   left: 50%;
@@ -123,10 +138,52 @@
   }
 }
 
+.read-more {
+  color: var(--blue-clr);
+  font-weight: 500;
+  cursor: pointer;
+
+  display: none;
+}
+
 @media (max-width: 1000px) {
   .welcome-section {
     grid-template-columns: 1fr;
     row-gap: 2rem;
+  }
+
+  .welcome-section-desc-desktop {
+    display: none;
+  }
+
+  .welcome-section-desc-mobile {
+    display: inline;
+  }
+
+  .read-more {
+    display: inline-block;
+  }
+
+  .read-more-text {
+    display: none;
+    overflow: hidden;
+  }
+
+  .show-read-more {
+    display: inline;
+    height: auto;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .welcome-section-link {
+    margin-bottom: 3rem;
+  }
+
+  .welcome-section-left-col {
+    grid-row: 1/2;
   }
 
   .mint-btn-container-img {
@@ -135,6 +192,7 @@
 
   .alert-box {
     width: 100%;
+    margin-top: -4rem;
   }
 }
 
