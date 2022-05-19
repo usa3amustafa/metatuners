@@ -85,7 +85,7 @@
 
 @media (max-width: 550px) {
   :root {
-    --gallery-width: 80vw;
+    --gallery-width: 100%;
     --gallery-height: 300px;
     --gallery-elements-displayed: 1.5;
   }

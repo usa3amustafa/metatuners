@@ -90,6 +90,14 @@
     /* border: 1px solid red; */
   }
 
+  .step-title {
+    margin-left: 2rem;
+  }
+
+  .step-info > ul {
+    margin-left: 2rem;
+  }
+
   .step-image {
     max-width: 400px;
     width: 85%;
@@ -97,7 +105,7 @@
   }
 
   .step-info {
-    max-width: 25ch;
+    max-width: 70%;
     margin: 0 auto;
   }
 
