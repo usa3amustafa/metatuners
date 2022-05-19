@@ -16,3 +16,6 @@ readMoreBtn.addEventListener('click', function () {
   readMoreText.classList.add('show-read-more')
   readMoreBtn.classList.add('hidden')
 })
+
+const video = document.querySelector('.video')
+video.play()

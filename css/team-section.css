@@ -4,6 +4,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   row-gap: 1rem;
+  column-gap: 2rem;
 
   margin-top: 2rem;
 }
@@ -26,11 +27,9 @@
 
 .member-image {
   width: 45%;
-  max-width: 250px;
-
   margin-bottom: 1rem;
 
-  transition: width 0.3s ease-in;
+  transition: width 0.2s ease-in;
 }
 
 .team-member:hover {
@@ -38,7 +37,7 @@
 }
 
 .team-member:hover .member-image {
-  width: 75%;
+  width: 65%;
 }
 
 .team-member:hover .member-name {
