@@ -1,11 +1,17 @@
 import charectors from './charectorsData.js'
+import VanillaTilt from './vanilla-tilt.js'
 
 const sliderContainer = document.querySelector('.slider-main')
 
 const nextBtns = document.querySelectorAll('.slider-right')
 const prevBtns = document.querySelectorAll('.slider-left')
 
-const slides = document.querySelectorAll('slider-item')
+const slides = document.querySelectorAll('.slider-images')
+
+VanillaTilt.init(slides, {
+  max: 25,
+  speed: 400,
+})
 
 let currSlide = 0
 
@@ -25,66 +31,7 @@ const activateDot = function (slide) {
 let sliderInterval = setInterval(() => {
   startSlider('next')
   activateDot(currSlide)
-}, 5000)
-
-// creating slides
-sliderContainer.innerHTML = charectors
-  .map((charector, index) => {
-    const { title, subTitle, info, img } = charector
-
-    let position = 'next'
-
-    if (index === 0) {
-      position = 'active'
-    }
-    if (index === charectors.length - 1) {
-      position = 'last'
-    }
-
-    return `
-                <div class="slider-item ${position}">
-                  <!-- slider text (slide) -->
-                  <div class="slider-text">
-                    <h2 class="slider-item-title">${title}</h2>
-                    <h3 class="slider-item-subtitle">${subTitle}</h3>
-                    <p class="slider-item-desc">
-                      ${info}
-                    </p>
-                    <h2 class="slider-item-info">Info</h2>
-                    <ul class="slider-item-links">
-                      <li class="slider-item-link">
-                        Meta Tuners
-                        <a href="#"
-                          >Opensea <i class="fa-solid fa-arrow-right"></i
-                        ></a>
-                      </li>
-                      <li class="slider-item-link">
-                        Meta Tuners
-                        <a href="#"
-                          >LooksRare <i class="fa-solid fa-arrow-right"></i
-                        ></a>
-                      </li>
-                      <li class="slider-item-link">
-                        Meta Tuners
-                        <a href="#">Rarity <i class="fa-solid fa-arrow-right"></i></a>
-                      </li>
-                      <li class="slider-item-link">
-                        Meta Tuners
-                        <a href="#"
-                          >Analytics <i class="fa-solid fa-arrow-right"></i
-                        ></a>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <!-- slider img (slide) -->
-                  <div class="slider-images" data-tilt data-tilt-max="10">
-                    <img src="${img}" alt="jdm" class="charector-img" />
-                  </div>
-                </div>
-  `
-  })
-  .join('')
+}, 1000000)
 
 const startSlider = type => {
   const active = document.querySelector('.active')
