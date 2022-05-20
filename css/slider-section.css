@@ -248,6 +248,10 @@
   background-color: #ccc;
 }
 
+.slider-gallery {
+  grid-column: 1/-1;
+}
+
 /* slider css */
 /* css for slider */
 
@@ -313,8 +317,6 @@
 }
 
 @media (max-width: 1000px) {
-  /* change slider display none removed */
-
   .slider-section {
     display: block;
   }
@@ -330,7 +332,6 @@
     row-gap: 1rem;
   }
 
-  /* change */
   .slider-controls-mobile {
     display: block;
 
@@ -340,10 +341,13 @@
     gap: 2rem;
   }
 
-  .dot {
-    max-width: 1.25rem;
+  .slider-dots {
+    padding-bottom: 2rem;
   }
 
+  .dot {
+    max-width: 0.9rem;
+  }
   .active-dot {
     transform: scale(1.5);
   }
@@ -406,11 +410,11 @@
   }
 
   .slider-dots {
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
   }
 
   .dot {
-    max-width: 1rem;
+    max-width: 0.9rem;
   }
 
   .line {

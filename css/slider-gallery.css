@@ -1,0 +1,92 @@
+.slider-gallery-main {
+  display: none;
+}
+@media (max-width: 1000px) {
+  :root {
+    --slider-gallery-width: 100%;
+    --slider-gallery-height: 300px;
+    --slider-gallery-elements: 8;
+    --slider-gallery-elements-displayed: 4;
+    --slider-gallery-element-width: calc(
+      var(--slider-gallery-width) / var(--slider-gallery-elements-displayed)
+    );
+    --slider-gallery-animation-duration: calc(
+      var(--slider-gallery-elements) * 5s
+    );
+  }
+
+  .slider-gallery-main {
+    display: block;
+    padding-top: 4rem;
+    width: var(--slider-gallery-width);
+    height: var(--slider-gallery-height);
+    overflow: hidden;
+    position: relative;
+
+    transition: transform 0.7s ease-in, opacity 0.7s ease-in;
+  }
+
+  .slider-gallery-content {
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    animation: scrolling var(--slider-gallery-animation-duration) linear
+      infinite;
+  }
+
+  @keyframes scrolling {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(
+        calc(
+          -1 * var(--slider-gallery-element-width) * var(--slider-gallery-elements)
+        )
+      );
+    }
+  }
+  .slider-gallery-content li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    flex-shrink: 0;
+    width: var(--slider-gallery-element-width);
+    max-height: 100%;
+    /* width: 100%; */
+    font-size: calc(var(--slider-gallery-height) * 3 / 4); /* 5rem; */
+    white-space: nowrap;
+  }
+
+  .slider-gallery-content li img {
+    /* width: 100%; */
+    /* height: 100%; */
+    border-left: 5px solid #000;
+    border-right: 5px solid #000;
+  }
+}
+
+@media (max-width: 800px) {
+  :root {
+    --slider-gallery-width: 100%;
+    --slider-gallery-height: 40vh;
+    --slider-gallery-elements-displayed: 4;
+  }
+}
+
+@media (max-width: 550px) {
+  :root {
+    --slider-gallery-width: 100%;
+    --slider-gallery-height: 300px;
+    --slider-gallery-elements-displayed: 1.5;
+  }
+
+  .slider-gallery-content li img {
+    width: 100%;
+    /* height: 100%; */
+    border-left: 5px solid #000;
+    border-right: 5px solid #000;
+  }
+}
