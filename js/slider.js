@@ -1,12 +1,15 @@
-const slides = document.querySelectorAll('.slider-item')
+import charectors from './charectorsData.js'
 
-const sliderLeftBtn = document.querySelector('.slider-left')
-const sliderRightBtn = document.querySelector('.slider-right')
+const sliderContainer = document.querySelector('.slider-main')
 
-const dotContainer = document.querySelector('.slider-dots')
+const nextBtns = document.querySelectorAll('.slider-right')
+const prevBtns = document.querySelectorAll('.slider-left')
+
+const slides = document.querySelectorAll('slider-item')
 
 let currSlide = 0
-const maxSlide = slides.length
+
+const maxSlide = 4
 
 const activateDot = function (slide) {
   document.querySelectorAll('.dot').forEach(dot => {
@@ -18,75 +21,143 @@ const activateDot = function (slide) {
   })
 }
 
-const goToSlide = function (slide) {
-  slides.forEach((s, i) => {
-    s.style.transform = `translateX(${100 * (i - slide)}%)`
+// auto slide
+let sliderInterval = setInterval(() => {
+  startSlider('next')
+  activateDot(currSlide)
+}, 5000)
+
+// creating slides
+sliderContainer.innerHTML = charectors
+  .map((charector, index) => {
+    const { title, subTitle, info, img } = charector
+
+    let position = 'next'
+
+    if (index === 0) {
+      position = 'active'
+    }
+    if (index === charectors.length - 1) {
+      position = 'last'
+    }
+
+    return `
+                <div class="slider-item ${position}">
+                  <!-- slider text (slide) -->
+                  <div class="slider-text">
+                    <h2 class="slider-item-title">${title}</h2>
+                    <h3 class="slider-item-subtitle">${subTitle}</h3>
+                    <p class="slider-item-desc">
+                      ${info}
+                    </p>
+                    <h2 class="slider-item-info">Info</h2>
+                    <ul class="slider-item-links">
+                      <li class="slider-item-link">
+                        Meta Tuners
+                        <a href="#"
+                          >Opensea <i class="fa-solid fa-arrow-right"></i
+                        ></a>
+                      </li>
+                      <li class="slider-item-link">
+                        Meta Tuners
+                        <a href="#"
+                          >LooksRare <i class="fa-solid fa-arrow-right"></i
+                        ></a>
+                      </li>
+                      <li class="slider-item-link">
+                        Meta Tuners
+                        <a href="#">Rarity <i class="fa-solid fa-arrow-right"></i></a>
+                      </li>
+                      <li class="slider-item-link">
+                        Meta Tuners
+                        <a href="#"
+                          >Analytics <i class="fa-solid fa-arrow-right"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <!-- slider img (slide) -->
+                  <div class="slider-images" data-tilt data-tilt-max="10">
+                    <img src="${img}" alt="jdm" class="charector-img" />
+                  </div>
+                </div>
+  `
   })
-}
+  .join('')
 
-goToSlide(0)
+const startSlider = type => {
+  const active = document.querySelector('.active')
+  const last = document.querySelector('.last')
+  let next = active.nextElementSibling
 
-// next slide
-const nextSlide = function () {
+  if (!next) {
+    next = sliderContainer.firstElementChild
+  }
+  active.classList.remove(['active'])
+  last.classList.remove(['last'])
+  next.classList.remove(['next'])
+
+  if (type === 'prev') {
+    active.classList.add('next')
+    last.classList.add('active')
+    next.classList.add('next')
+
+    next = last.previousElementSibling
+
+    if (!next) {
+      next = sliderContainer.lastElementChild
+    }
+
+    next.classList.remove(['next'])
+    next.classList.add('last')
+
+    if (currSlide === 0) {
+      currSlide = maxSlide - 1
+    } else {
+      currSlide--
+    }
+
+    activateDot(currSlide)
+
+    return
+  }
+
+  active.classList.add(['last'])
+  last.classList.add(['next'])
+  next.classList.add(['active'])
+
   if (currSlide === maxSlide - 1) {
     currSlide = 0
   } else {
     currSlide++
   }
 
-  goToSlide(currSlide)
   activateDot(currSlide)
-
-  // clearing interval
-  clearInterval(sliderInterval)
-
-  sliderInterval = setInterval(() => {
-    nextSlide()
-  }, 5000)
 }
 
-// auto slide
+nextBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    startSlider('next')
 
-let sliderInterval = setInterval(() => {
-  nextSlide()
-}, 5000)
+    // clearing interval
+    clearInterval(sliderInterval)
 
-// prev slide
+    sliderInterval = setInterval(() => {
+      startSlider('next')
+    }, 5000)
+  })
+})
 
-const prevSlide = function () {
-  if (currSlide === 0) {
-    currSlide = maxSlide - 1
-  } else {
-    currSlide--
-  }
-  goToSlide(currSlide)
-  activateDot(currSlide)
+prevBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    startSlider('prev')
 
-  // clearing interval
-  clearInterval(sliderInterval)
+    // clearing interval
+    clearInterval(sliderInterval)
 
-  sliderInterval = setInterval(() => {
-    nextSlide()
-  }, 5000)
-}
-
-sliderRightBtn.addEventListener('click', nextSlide)
-sliderLeftBtn.addEventListener('click', prevSlide)
-
-// dots
-
-dotContainer.addEventListener('click', function (e) {
-  if (e.target.classList.contains('dot')) {
-    const { slide } = e.target.dataset
-
-    goToSlide(slide)
-    activateDot(slide)
-  }
-
-  // clearing interval
-  clearInterval(sliderInterval)
-
-  sliderInterval = setInterval(() => {
-    nextSlide()
-  }, 5000)
+    sliderInterval = setInterval(() => {
+      startSlider('next')
+    }, 5000)
+  })
 })
