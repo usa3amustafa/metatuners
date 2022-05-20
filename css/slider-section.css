@@ -198,6 +198,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 2rem;
 }
 
 .slider-btn {
@@ -211,8 +212,6 @@
   -webkit-transition: ease-out 0.4s;
   -moz-transition: ease-out 0.4s;
   transition: ease-out 0.4s;
-
-  margin-top: 2rem;
 
   transition: color 0.7s ease-out, box-shadow ease-out 0.6s,
     transform 0.7s ease-out, opacity 0.7s ease-out;
@@ -231,7 +230,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 2rem;
+  padding: 1rem 0;
 }
 
 .dot {
@@ -339,10 +338,6 @@
     justify-content: center;
     align-items: center;
     gap: 2rem;
-  }
-
-  .slider-dots {
-    padding-bottom: 1rem;
   }
 
   .dot {

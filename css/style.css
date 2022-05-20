@@ -46,7 +46,7 @@ body {
 }
 
 section {
-  padding: 4rem 0;
+  padding: 6rem 0;
 }
 
 .section-title {
@@ -137,8 +137,6 @@ section {
     font-size: 1.5rem;
   }
   .btn {
-    padding: 0.5rem 1rem;
-    font-family: var(--anglecut);
     font-size: 0.75rem;
     text-align: center;
   }
