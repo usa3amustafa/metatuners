@@ -7,38 +7,32 @@
   background-position: center center;
   background-attachment: fixed;
 
-  /* -webkit-background-size: 1920px 960px; */
   -moz-background-size: cover;
 }
 
 .bg-img-1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
-    url('../img/CONTAINERIMAGES/City Banner.jpg');
+  background-image: url('../img/CONTAINERIMAGES/City Banner.jpg');
   min-height: 80vh;
-  background-position: 100% bottom;
-  background-size: cover;
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% bottom;
 }
 
 .bg-img-2 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
-    url('../img/CONTAINERIMAGES/City Banner.jpg');
+  background-image: url('../img/CONTAINERIMAGES/City Banner.jpg');
   background-position: top center;
 }
 
 .bg-img-3 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
-    url('../img/CONTAINERIMAGES/Garage_PRE_Final 3.jpg');
+  background-image: url('../img/CONTAINERIMAGES/Garage_PRE_Final 3.jpg');
 }
 
 .bg-img-4 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
-    url('../img/CONTAINERIMAGES/MT_JUNKYARD.jpg');
+  background-image: url('../img/CONTAINERIMAGES/MT_JUNKYARD.jpg');
 }
 
 .bg-img-5 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-    url('../img/CONTAINERIMAGES/MT_Medium_banner.jpg');
+  background-image: url('../img/CONTAINERIMAGES/MT_Medium_banner.jpg');
   background-size: contain;
 }
 
@@ -48,6 +42,7 @@
 
 @media (max-width: 1000px) {
   .bg-img-1 {
+    min-height: 60vh;
     background-position: 50% bottom;
   }
   .bg-img-2 {
@@ -57,16 +52,7 @@
   }
 
   .bg-img-4 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
-      url('../img/CONTAINERIMAGES/Between Utilities_Roadmap_Mobile_image.jpg');
+    background-image: url('../img/CONTAINERIMAGES/Between Utilities_Roadmap_Mobile_image.jpg');
     background-size: cover;
-  }
-
-  .video-img-mobile {
-    display: block;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
-      url('../img/CONTAINERIMAGES/Collection_Mobile_image.jpg');
-    background-size: contain;
-    min-height: 50vh;
   }
 }
