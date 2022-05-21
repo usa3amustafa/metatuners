@@ -235,6 +235,7 @@
 
 .dot {
   max-width: 1rem;
+  cursor: pointer;
   transition: transform 0.4s ease-in-out;
 }
 
