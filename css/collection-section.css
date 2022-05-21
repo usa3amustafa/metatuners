@@ -24,8 +24,16 @@
   width: 100%;
 }
 
+.video-image {
+  display: none;
+}
+
 @media (max-width: 1000px) {
   .video-bg {
     display: none;
+  }
+
+  .video-image {
+    display: block;
   }
 }
