@@ -6,6 +6,9 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
+
+  /* -webkit-background-size: 1920px 960px; */
+  -moz-background-size: cover;
 }
 
 .bg-img-1 {
