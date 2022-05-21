@@ -23,3 +23,9 @@
 .video {
   width: 100%;
 }
+
+@media (max-width: 1000px) {
+  .video-bg {
+    display: none;
+  }
+}

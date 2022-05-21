@@ -4,7 +4,7 @@
   min-height: 60vh;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
   background-attachment: fixed;
 }
 
@@ -29,11 +29,42 @@
 .bg-img-4 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
     url('../img/CONTAINERIMAGES/MT_JUNKYARD.jpg');
-  background-size: contain;
+  /* background-size: contain; */
 }
 
 .bg-img-5 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
     url('../img/CONTAINERIMAGES/MT_Medium_banner.jpg');
   background-size: contain;
+}
+
+.video-img-mobile {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .bg-img-1 {
+    background-position: 50% bottom;
+    min-height: 90vh;
+  }
+  .bg-img-2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+      url('../img/CONTAINERIMAGES/Home_Mobile_image2.jpg');
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .bg-img-4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+      url('../img/CONTAINERIMAGES/Between Utilities_Roadmap_Mobile_image.jpg');
+    background-size: cover;
+  }
+
+  .video-img-mobile {
+    display: block;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+      url('../img/CONTAINERIMAGES/Collection_Mobile_image.jpg');
+    background-size: contain;
+    min-height: 50vh;
+  }
 }
