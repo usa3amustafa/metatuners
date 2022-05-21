@@ -225,7 +225,7 @@
 }
 
 .slider-dots {
-  grid-column: 2/3;
+  grid-column: 1/-1;
   justify-items: center;
   display: flex;
   justify-content: center;
