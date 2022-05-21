@@ -81,6 +81,10 @@ section {
   color: var(--text-clr);
 }
 
+.btn:focus-visible {
+  outline: none;
+}
+
 /* preloader */
 
 #preloader {
