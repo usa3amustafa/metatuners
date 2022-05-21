@@ -51,8 +51,7 @@
     background-position: 50% bottom;
   }
   .bg-img-2 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
-      url('../img/AUTO SHOP/autoshop image.png');
+    background-image: url('../img/AUTO SHOP/autoshop image.png');
     background-position: center center;
     background-size: cover;
   }
