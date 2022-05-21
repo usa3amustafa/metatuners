@@ -55,6 +55,7 @@
   .bg-img-1 {
     min-height: 60vh;
     background-position: 50% bottom;
+    background-attachment: scroll;
   }
   .bg-img-2 {
     background-image: url('../img/AUTO SHOP/autoshop image.png');
