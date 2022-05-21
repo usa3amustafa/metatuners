@@ -60,6 +60,7 @@ const goToSlide = slide => {
     nextSlide1 = 1
     nextSlide2 = 2
     prevSlide = 3
+    currSlide = 0
   }
 
   if (slide === 1) {
@@ -67,18 +68,21 @@ const goToSlide = slide => {
     nextSlide1 = 2
     nextSlide2 = 3
     prevSlide = 0
+    currSlide = 1
   }
   if (slide === 2) {
     activeSlide = 2
     nextSlide1 = 3
     nextSlide2 = 0
     prevSlide = 1
+    currSlide = 2
   }
   if (slide === 3) {
     activeSlide = 3
     nextSlide1 = 0
     nextSlide2 = 1
     prevSlide = 2
+    currSlide = 3
   }
 
   slides[activeSlide].classList.add('active')
