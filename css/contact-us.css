@@ -37,6 +37,7 @@
   font-weight: 400;
   background-color: var(--black-light-1);
   border: none;
+  outline: none;
   color: var(--black-light);
   letter-spacing: 1px;
   border-radius: 2px;
