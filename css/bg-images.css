@@ -6,8 +6,19 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
+  position: relative;
 
-  -moz-background-size: cover;
+  /* -moz-background-size: cover; */
+}
+
+.placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  background: transparent;
 }
 
 .bg-img-1 {
