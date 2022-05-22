@@ -1,5 +1,7 @@
 /* team section */
-
+.team {
+  padding-bottom: 0rem;
+}
 .team-members {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -11,12 +13,18 @@
 
 .team-member {
   text-align: center;
-  height: 300px;
+  height: 386px;
 
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+}
+
+.team-member-four,
+.team-member-five,
+.team-member-six {
+  justify-content: flex-start;
 }
 
 .member-image {
@@ -98,8 +106,10 @@
 .member-info {
   text-transform: capitalize;
   font-weight: normal;
-  max-width: 20ch;
+  max-width: 35ch;
+  font-size: 0.75rem;
   margin: 0 auto;
+  line-height: 1.6;
 
   opacity: 0;
 

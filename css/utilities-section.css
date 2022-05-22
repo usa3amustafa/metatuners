@@ -79,30 +79,22 @@
   .utilities-text-title {
     text-align: center;
   }
+
   .utilities-gif-img {
     grid-row: 1/2;
-  }
-
-  .utilities-top-img {
-    grid-row: 1/2;
-  }
-
-  .utilities-bottom {
-    grid-template-columns: repeat(3, 1fr);
   }
 
   .utilities-main {
     grid-template-columns: 1fr;
     row-gap: 2rem;
   }
+  .utility {
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+  }
 }
 @media (max-width: 800px) {
-  .utilities-top-text-title {
-    text-align: center;
-  }
-  .utilities-top-desc {
-    text-align: center;
-  }
   .utilities-bottom {
     grid-template-columns: repeat(2, 1fr);
   }
