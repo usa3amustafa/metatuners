@@ -6,19 +6,6 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
-  position: relative;
-
-  /* -moz-background-size: cover; */
-}
-
-.placeholder {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-
-  background: transparent;
 }
 
 .bg-img-1 {
@@ -43,8 +30,9 @@
 }
 
 .bg-img-5 {
-  background-image: url('../img/CONTAINERIMAGES/MT_Medium_banner.jpg');
-  background-size: contain;
+  background-image: url('../img/CONTAINERIMAGES/CHARACTER BANNER.jpg');
+  background-position: bottom center;
+  background-size: cover;
 }
 
 .video-img-mobile {
@@ -52,19 +40,27 @@
 }
 
 @media (max-width: 1000px) {
-  .bg-img-1 {
-    min-height: 60vh;
-    background-position: 50% bottom;
+  .bg-img {
     background-attachment: scroll;
   }
+  .bg-img-1 {
+    min-height: 55vh;
+    background-image: url('../img/CONTAINERIMAGES/Home_Mobile_image2.jpg');
+    background-size: cover;
+    background-position: center;
+  }
   .bg-img-2 {
-    background-image: url('../img/AUTO SHOP/autoshop image.png');
+    background-image: url('../img/CONTAINERIMAGES/City Banner.jpg');
     background-position: center center;
     background-size: cover;
   }
 
   .bg-img-4 {
     background-image: url('../img/CONTAINERIMAGES/Between Utilities_Roadmap_Mobile_image.jpg');
+    background-size: cover;
+  }
+  .bg-img-5 {
+    background-image: url('../img/CONTAINERIMAGES/Collection Character Image_MOBILE.jpg');
     background-size: cover;
   }
 }

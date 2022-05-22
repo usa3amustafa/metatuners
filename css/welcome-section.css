@@ -17,6 +17,16 @@
   transition: transform 0.7s ease-out, opacity 0.7s ease-out;
 }
 
+.welcome-section-desc-2 {
+  line-height: 1.6;
+
+  transition: transform 0.7s ease-out, opacity 0.7s ease-out;
+}
+
+.welcome-text-mobile {
+  display: none;
+}
+
 .welcome-section-desc-desktop {
   display: block;
 }
@@ -152,6 +162,11 @@
     row-gap: 2rem;
   }
 
+  .welcome-text-mobile {
+    display: block;
+    transition: transform 0.7s ease-out, opacity 0.7s ease-out;
+  }
+
   .welcome-section-desc-desktop {
     display: none;
   }
@@ -187,7 +202,7 @@
   }
 
   .mint-btn-container-img {
-    width: 75%;
+    width: 70%;
   }
 
   .alert-box {
@@ -197,6 +212,20 @@
 }
 
 @media (max-width: 600px) {
+  .alert-icon {
+    display: none;
+  }
+
+  .alert-box {
+    background: transparent;
+  }
+
+  .alert-desc {
+    padding: 0;
+    color: var(--blue-clr);
+    font-weight: 600;
+  }
+
   .mint-btn-container-img {
     width: 100%;
   }

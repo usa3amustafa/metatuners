@@ -5,13 +5,13 @@
   :root {
     --slider-gallery-width: 100%;
     --slider-gallery-height: 300px;
-    --slider-gallery-elements: 8;
+    --slider-gallery-elements: 20;
     --slider-gallery-elements-displayed: 4;
     --slider-gallery-element-width: calc(
       var(--slider-gallery-width) / var(--slider-gallery-elements-displayed)
     );
     --slider-gallery-animation-duration: calc(
-      var(--slider-gallery-elements) * 5s
+      var(--slider-gallery-elements) * 3s
     );
   }
 

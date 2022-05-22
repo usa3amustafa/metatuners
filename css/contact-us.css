@@ -41,7 +41,6 @@
   color: var(--black-light);
   letter-spacing: 1px;
   border-radius: 2px;
-  /* border: 1px solid var(--bgc); */
 
   transition: box-shadow 0.3s ease-in-out;
 }

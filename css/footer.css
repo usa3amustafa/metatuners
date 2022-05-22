@@ -7,8 +7,10 @@ footer {
 .footer {
   border-top: 2px solid var(--text-clr);
   padding: 2rem 0;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   align-items: flex-start;
 }
 
@@ -88,8 +90,10 @@ footer {
 
 @media (max-width: 800px) {
   .footer {
-    grid-template-columns: 1fr;
-    row-gap: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
   }
 
   .email {

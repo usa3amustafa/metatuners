@@ -89,6 +89,12 @@
   }
 }
 @media (max-width: 800px) {
+  .utilities-top-text-title {
+    text-align: center;
+  }
+  .utilities-top-desc {
+    text-align: center;
+  }
   .utilities-bottom {
     grid-template-columns: repeat(2, 1fr);
   }
