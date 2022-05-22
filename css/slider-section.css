@@ -289,14 +289,14 @@
 }
 .slider-item.next {
   opacity: 0;
-  transform: translateX(100%);
+  transform: translateX(-100%);
 
   transition: all 0.6s ease-in-out;
 }
 .slider-item.last {
   opacity: 0;
 
-  transform: translateX(-100%);
+  transform: translateX(100%);
 
   transition: all 0.6s ease-in-out;
 }

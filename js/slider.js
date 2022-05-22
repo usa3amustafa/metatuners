@@ -7,12 +7,6 @@ let currSlide = 0
 
 const maxSlide = 4
 
-// // auto slide
-let sliderInterval = setInterval(() => {
-  startSlider('next')
-  activateDot(currSlide)
-}, 5000)
-
 // acativate dot
 const activateDot = function (slide) {
   document.querySelectorAll('.dot').forEach(dot => {
@@ -23,6 +17,12 @@ const activateDot = function (slide) {
       .classList.add('active-dot')
   })
 }
+
+// // auto slide
+let sliderInterval = setInterval(() => {
+  startSlider('next')
+  activateDot(currSlide)
+}, 5000)
 
 const dots = document.querySelectorAll('.dots')
 const slides = document.querySelectorAll('.slider-item')
