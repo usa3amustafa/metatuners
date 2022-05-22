@@ -26,6 +26,7 @@
 
 .video-image {
   display: none;
+  transition: transform 0.7s ease-out, opacity 0.7s ease-out;
 }
 
 @media (max-width: 1000px) {
