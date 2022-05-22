@@ -45,6 +45,9 @@
   .bg-img {
     background-attachment: scroll;
   }
+}
+
+@media (max-width: 1000px) {
   .bg-img-1 {
     min-height: 65vh;
     background-image: url('../img/CONTAINERIMAGES/Home_Mobile_image2.jpg');
