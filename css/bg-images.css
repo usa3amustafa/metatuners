@@ -41,7 +41,7 @@
   display: none;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .bg-img {
     background-attachment: scroll;
   }

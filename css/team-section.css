@@ -19,12 +19,6 @@
   align-items: center;
 }
 
-.team-member-four,
-.team-member-five,
-.team-member-six {
-  /* justify-content: flex-end; */
-}
-
 .member-image {
   width: 45%;
   margin-bottom: 1rem;
@@ -42,21 +36,21 @@
 
 .team-member:hover .member-name {
   opacity: 0;
-
-  /* display: none; */
 }
 
 .team-member:hover .member-role {
   opacity: 1;
 
-  /* display: block; */
   transform: translateY(-2.5rem);
 }
 
 .team-member:hover .member-info {
   opacity: 1;
 
-  /* display: block; */
+  transform: translateY(-2.5rem);
+}
+.team-member:hover .member-links {
+  opacity: 1;
 
   transform: translateY(-2.5rem);
 }
@@ -98,8 +92,6 @@
 
   opacity: 0;
 
-  /* display: none; */
-
   transition: opacity 0.3s ease-in, transform 0.3s ease-in;
 }
 
@@ -111,8 +103,29 @@
 
   opacity: 0;
 
-  /* display: none; */
   transition: opacity 0.3s ease-in, transform 0.3s ease-in;
+}
+.member-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+  opacity: 0;
+
+  transition: opacity 0.3s ease-in, transform 0.3s ease-in;
+}
+
+.member-link {
+  color: var(--text-clr);
+  transition: color 0.3s ease-in-out;
+}
+.member-link:hover {
+  color: var(--blue-clr);
+}
+
+.member-links-icon {
+  font-size: 1rem;
 }
 
 @media (max-width: 800px) {
