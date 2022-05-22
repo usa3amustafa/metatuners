@@ -22,6 +22,10 @@
   animation-name: slideup;
 }
 
+.nav-cta {
+  display: none;
+}
+
 @keyframes slideup {
   from {
     opacity: 0;
@@ -124,7 +128,7 @@
     top: 0;
     right: 0;
     height: 100vh;
-    width: 100vw;
+    width: 70vw;
     max-width: 500px;
 
     display: flex;
@@ -137,6 +141,25 @@
 
     transition: transform 0.3s ease-in-out;
   }
+
+  .nav-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .nav-cta {
+    display: block;
+    background-color: var(--text-clr);
+    color: var(--blue-clr);
+    cursor: pointer;
+  }
+
+  /* .nav-cta:hover {
+    background-color: var(--text-clr);
+    color: var(--blue-clr);
+  } */
 
   .show-nav {
     transform: translateX(0px);
