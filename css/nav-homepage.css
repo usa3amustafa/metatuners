@@ -156,11 +156,6 @@
     cursor: pointer;
   }
 
-  /* .nav-cta:hover {
-    background-color: var(--text-clr);
-    color: var(--blue-clr);
-  } */
-
   .show-nav {
     transform: translateX(0px);
   }

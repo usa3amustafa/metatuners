@@ -81,6 +81,14 @@
   gap: 0.5rem;
   align-items: center;
   font-weight: 400;
+  color: var(--text-clr);
+  text-decoration: none;
+
+  transition: color 0.3s ease-in-out;
+}
+
+.contact-us-link:hover {
+  color: var(--blue-clr);
 }
 
 .contact-us-link-3 {
