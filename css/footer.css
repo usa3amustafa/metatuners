@@ -14,24 +14,6 @@ footer {
   align-items: flex-start;
 }
 
-.email {
-}
-
-.email-input {
-  color: var(--black-light);
-  background-color: var(--black-light-2);
-  border: none;
-  padding: 0.5rem;
-  width: 35ch;
-  font-size: 0.75rem;
-  font-family: var(--franker);
-  margin-top: 0.5rem;
-}
-
-.email-input:focus-visible {
-  outline: none;
-}
-
 .footer-logo {
   text-align: center;
 }
@@ -68,15 +50,6 @@ footer {
 }
 
 @media (max-width: 1000px) {
-  .email-label {
-    font-size: 0.75rem;
-  }
-
-  .email-input {
-    margin-top: 0.25rem;
-    width: 30ch;
-  }
-
   .social-links-footer {
     gap: 0.5rem;
     font-size: 1rem;
@@ -94,10 +67,6 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 3rem;
-  }
-
-  .email {
-    justify-self: center;
   }
 
   .footer-logo {

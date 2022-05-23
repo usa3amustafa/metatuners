@@ -28,10 +28,6 @@
   text-transform: uppercase;
   transition: all 0.3s ease;
   margin: 0 auto;
-
-  /* background: var(--text-clr);
-  color: var(--bgc);
-  border-radius: 2px; */
 }
 
 .splash-enter:before,
@@ -55,8 +51,6 @@
   text-shadow: 1px 0 var(--bgc);
   box-shadow: 1px 0 var(--bgc);
   border-radius: 2px;
-
-  /* animation: glitch-test 1s infinite linear alternate-reverse; */
 }
 
 .splash-enter:after {
@@ -65,8 +59,6 @@
   text-shadow: -1px 0 var(--bgc);
   box-shadow: -1px 0 var(--bgc);
   border-radius: 2px;
-
-  /* animation: glitch-test 1s infinite linear alternate; */
 }
 
 .splash-enter:hover {

@@ -7,8 +7,6 @@
   width: 100%;
   z-index: 5;
   background-color: var(--bgc);
-
-  /* overflow-x: hidden; */
 }
 
 .nav-homepage {

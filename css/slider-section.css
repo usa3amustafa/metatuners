@@ -2,12 +2,9 @@
 
 .slider-section {
   display: grid;
-  /* change */
   grid-template-columns: 26px 5fr 26px 1fr;
   column-gap: 2rem;
 }
-
-/* change */
 
 .slider-section-title {
   grid-column: 1/-1;
@@ -21,14 +18,9 @@
   align-items: center;
 }
 
-.slider-control > i {
-  /* change */
-}
-
 .slider-left,
 .slider-right {
   cursor: pointer;
-  /* change */
   font-size: 3rem;
   transition: transform 0.2s ease-out, color 0.2s ease-out;
 }
@@ -253,7 +245,6 @@
   grid-column: 1/-1;
 }
 
-/* slider css */
 /* css for slider */
 
 .slider-main {

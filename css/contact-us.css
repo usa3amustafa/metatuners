@@ -46,7 +46,6 @@
 }
 
 .form-element > input:focus-visible {
-  /* border: 1px solid var(--blue-clr); */
   box-shadow: 0 0 5px var(--blue-clr-op-10);
   outline: none;
 }
