@@ -384,5 +384,3 @@ var VanillaTilt = (function () {
     t
   )
 })()
-
-export default VanillaTilt
