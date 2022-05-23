@@ -13,19 +13,19 @@
 
 .team-member {
   text-align: center;
-  height: 386px;
+  height: 325px;
 
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
 }
 
-.team-member-four,
+/* .team-member-four,
 .team-member-five,
 .team-member-six {
   justify-content: flex-start;
-}
+} */
 
 .member-image {
   width: 45%;
