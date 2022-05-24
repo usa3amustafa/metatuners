@@ -102,6 +102,10 @@
   transition: color 0.3s ease-in-out;
 }
 
+.nav-items {
+  display: none;
+}
+
 @media (max-width: 1200px) {
   .nav-homepage-logo {
     max-width: 8rem;

@@ -7,7 +7,7 @@ const preLoaderImg = document.querySelector('.preloader-img')
 setInterval(function () {
   preLoaderImg.src = '../img/gliched-logo.gif'
   setTimeout(function () {
-    preLoaderImg.src = '../img/SPLASH PAGE/MetaTuners_M.png'
+    preLoaderImg.src = '../img/SPLASH PAGE/MetaTuners_M.webp'
   }, 1000)
 }, 4000)
 
