@@ -9,7 +9,7 @@
 }
 
 .bg-img-1 {
-  background-image: url('../img/CONTAINERIMAGES/City Banner.webp');
+  background-image: url('../img/CONTAINERIMAGES/City Banner.jpg');
   min-height: 80vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -17,22 +17,22 @@
 }
 
 .bg-img-2 {
-  background-image: url('../img/CONTAINERIMAGES/City Banner.webp');
+  background-image: url('../img/CONTAINERIMAGES/City Banner.jpg');
   background-position: top center;
 }
 
 .bg-img-3 {
-  background-image: url('../img/CONTAINERIMAGES/Garage_PRE_Final 3.webp');
+  background-image: url('../img/CONTAINERIMAGES/Garage_PRE_Final 3.jpg');
   background-position: center center;
 }
 
 .bg-img-4 {
-  background-image: url('../img/CONTAINERIMAGES/MT_JUNKYARD.webp');
+  background-image: url('../img/CONTAINERIMAGES/MT_JUNKYARD.jpg');
   background-position: center center;
 }
 
 .bg-img-5 {
-  background-image: url('../img/CONTAINERIMAGES/CHARACTER BANNER.webp');
+  background-image: url('../img/CONTAINERIMAGES/CHARACTER BANNER.jpg');
   background-position: bottom center;
   background-size: cover;
 }
@@ -50,27 +50,27 @@
 @media (max-width: 1000px) {
   .bg-img-1 {
     min-height: 65vh;
-    background-image: url('../img/CONTAINERIMAGES/Home_Mobile_image2.webp');
+    background-image: url('../img/CONTAINERIMAGES/Home_Mobile_image2.jpg');
     background-size: cover;
     background-position: center;
   }
   .bg-img-2 {
-    background-image: url('../img/CONTAINERIMAGES/City Banner.webp');
+    background-image: url('../img/CONTAINERIMAGES/City Banner.jpg');
     background-size: cover;
     background-position: center;
   }
   .bg-img-3 {
-    background-image: url('../img/CONTAINERIMAGES/Garage_PRE_Final 3.webp');
+    background-image: url('../img/CONTAINERIMAGES/Garage_PRE_Final 3.jpg');
     background-position: center;
     background-size: cover;
   }
   .bg-img-4 {
-    background-image: url('../img/CONTAINERIMAGES/Between Utilities_Roadmap_Mobile_image.webp');
+    background-image: url('../img/CONTAINERIMAGES/Between Utilities_Roadmap_Mobile_image.jpg');
     background-position: center;
     background-size: cover;
   }
   .bg-img-5 {
-    background-image: url('../img/CONTAINERIMAGES/Collection Character Image_MOBILE.webp');
+    background-image: url('../img/CONTAINERIMAGES/Collection Character Image_MOBILE.jpg');
     background-size: cover;
     background-position: center;
   }
