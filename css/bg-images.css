@@ -22,7 +22,7 @@
 }
 
 .bg-img-3 {
-  background-image: url('../img/CONTAINERIMAGES/Garage_PRE_Final 3.jpg');
+  background-image: url('../img/CONTAINERIMAGES/Garage_PRE_Final 3.webp');
   background-position: center center;
 }
 
@@ -60,7 +60,7 @@
     background-position: center;
   }
   .bg-img-3 {
-    background-image: url('../img/CONTAINERIMAGES/Garage_PRE_Final 3.jpg');
+    background-image: url('../img/CONTAINERIMAGES/Garage_PRE_Final 3.webp');
     background-position: center;
     background-size: cover;
   }
