@@ -1,12 +1,7 @@
-/* fonts */
-
 @font-face {
-  font-family: 'Anglecut';
+  font-family: Anglecut;
   src: url('../FONTS/Anglecut.otf');
 }
-
-/* utlities  */
-
 :root {
   --bgc: #000;
   --text-clr: #fefefe;
@@ -18,44 +13,36 @@
   --franker: Francker W10;
   --anglecut: Anglecut;
 }
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-
 html {
   scroll-behavior: smooth;
 }
-
 img {
   max-width: 100%;
 }
-
 .container {
   width: 95%;
   max-width: 1280px;
   margin: 0 auto;
 }
-
 body {
   background-color: var(--bgc);
   color: var(--text-clr);
   font-family: var(--franker);
 }
-
 section {
   padding: 4rem 0;
 }
-
 .section-title {
   font-size: 2rem;
   font-family: var(--anglecut);
   text-transform: uppercase;
   transition: transform 1s ease-out, opacity 1s ease-out;
 }
-
 .btn {
   padding: 1rem 2rem;
   font-family: var(--anglecut);
@@ -72,50 +59,39 @@ section {
   -moz-transition: ease-out 0.4s;
   transition: ease-out 0.4s;
   text-align: center;
-
   border-radius: 6px;
 }
-
 .btn:hover {
   box-shadow: inset 400px 0 0 0 var(--blue-clr);
   color: var(--text-clr);
 }
-
 .btn:focus-visible {
-  outline: none;
+  outline: 0;
 }
-
-/* preloader */
-
 #preloader {
   display: flex;
   justify-content: center;
   align-items: center;
-
   background: #000;
   height: 100vh;
   width: 100%;
   position: fixed;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   z-index: 100;
 }
-
 .preloader-img {
   width: 70%;
   max-width: 300px;
 }
-
 .fade-in {
   opacity: 0;
   transform: translateY(2rem);
 }
-
 .fade-in.appear {
   opacity: 1;
-  transform: translateY(0rem);
+  transform: translateY(0);
 }
-
 @media (max-width: 800px) {
   .container {
     width: 90%;
@@ -124,7 +100,6 @@ section {
     padding: 2rem 0;
   }
 }
-
 @media (max-width: 600px) {
   .section-title {
     font-size: 1.5rem;

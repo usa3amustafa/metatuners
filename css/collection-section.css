@@ -1,42 +1,32 @@
-/* collection */
 .collection {
-  padding-bottom: 0rem;
+  padding-bottom: 0;
 }
-
 .collection-section-title {
   margin-bottom: 1rem;
 }
-
 .collection-desc {
   line-height: 1.6;
   max-width: 70ch;
-
   transition: transform 0.7s ease-out, opacity 0.7s ease-out;
 }
-
 .video-bg {
   max-width: 1400px;
   width: 100%;
   margin: 0 auto;
 }
-
 .video {
   width: 100%;
 }
-
 .video-image {
   display: none;
   transition: transform 0.7s ease-out, opacity 0.7s ease-out;
 }
-
 @media (max-width: 1000px) {
   .video-bg {
     display: none;
   }
-
   .video-image {
     display: block;
-
     transition: transform 0.7s ease-out, opacity 0.7s ease-out;
   }
 }

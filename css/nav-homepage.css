@@ -1,5 +1,3 @@
-/* navbar */
-
 .nav-homepage-sticky {
   position: fixed;
   top: 0;
@@ -8,113 +6,89 @@
   z-index: 5;
   background-color: var(--bgc);
 }
-
 .nav-homepage {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   padding: 1rem 0;
-
   animation-duration: 1.2s;
   animation-name: slideup;
 }
-
 .nav-cta {
   display: none;
 }
-
 @keyframes slideup {
   from {
     opacity: 0;
     transform: translateY(-4rem);
   }
-
   to {
     opacity: 1;
-    transform: translateY(0rem);
+    transform: translateY(0);
   }
 }
-
 .nav-hidden {
   opacity: 0;
   transform: translateY(-4rem);
 }
-
 .nav-homepage-logo {
   max-width: 10rem;
 }
-
 .nav-homepage-links {
   align-self: flex-end;
-
   display: flex;
   justify-content: center;
   align-items: flex-end;
   gap: 1rem;
-
   list-style: none;
 }
-
 .nav-homepage-link {
   text-decoration: none;
   text-transform: uppercase;
   color: var(--text-clr);
   font-size: 0.875rem;
-
   transition: color 0.3s ease-in-out;
 }
-
 .nav-homepage-link:hover,
 .social-link > i:hover {
   color: var(--blue-clr);
 }
-
 .nav-homepage-social-links {
   display: flex;
   justify-content: center;
   gap: 0.5rem;
   font-size: 0.8rem;
-
   list-style: none;
 }
-
 .social-link > i {
   color: var(--text-clr);
   transition: color 0.3s ease-in-out;
 }
-
 .hamburger {
   font-size: 1.25rem;
   display: none;
   cursor: pointer;
   transition: color 0.3s ease-in-out;
 }
-
-.hamburger:hover,
-.close-menu:hover {
+.close-menu:hover,
+.hamburger:hover {
   color: var(--blue-clr);
 }
-
 .close-menu {
   display: none;
   cursor: pointer;
   transition: color 0.3s ease-in-out;
 }
-
 .nav-items {
   display: none;
 }
-
 @media (max-width: 1200px) {
   .nav-homepage-logo {
     max-width: 8rem;
   }
-
   .nav-homepage-links {
     gap: 0.875rem;
   }
-
   .nav-homepage-link {
     font-size: 0.75rem;
   }
@@ -122,7 +96,6 @@
     font-size: 0.7rem;
   }
 }
-
 @media (max-width: 1000px) {
   .nav-homepage-links {
     display: block;
@@ -132,52 +105,41 @@
     height: 100vh;
     width: 70vw;
     max-width: 500px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: var(--bgc);
-
     transform: translateX(800px);
-
     transition: transform 0.3s ease-in-out;
   }
-
   .nav-items {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
   }
-
   .nav-cta {
     display: block;
     background-color: var(--text-clr);
     color: var(--blue-clr);
     cursor: pointer;
   }
-
   .show-nav {
-    transform: translateX(0px);
+    transform: translateX(0);
   }
-
   .nav-homepage-link,
   .social-link {
     font-size: 0.9rem;
   }
-
   .hamburger {
     display: block;
   }
-
   .close-menu {
     display: block;
-
     position: absolute;
     top: 20px;
     right: 20px;
-
     font-size: 2rem;
   }
 }

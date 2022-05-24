@@ -150,9 +150,7 @@ var VanillaTilt = (function () {
       }),
         this.element &&
           this.element.style &&
-          (this.element.style.transform =
-            `perspective(${this.settings.perspective}px) ` +
-            'rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)'),
+          (this.element.style.transform = `perspective(${this.settings.perspective}px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)`),
         this.resetGlare()
     }
     resetGlare() {
@@ -248,9 +246,8 @@ var VanillaTilt = (function () {
         ')'),
         this.glare &&
           ((this.glareElement.style.transform = `rotate(${t.angle}deg) translate(-50%, -50%)`),
-          (this.glareElement.style.opacity = `${
-            (t.percentageY * this.settings['max-glare']) / 100
-          }`)),
+          (this.glareElement.style.opacity =
+            '' + (t.percentageY * this.settings['max-glare']) / 100)),
         this.element.dispatchEvent(
           new CustomEvent('tiltChange', { detail: t })
         ),

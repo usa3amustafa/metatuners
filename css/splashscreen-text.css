@@ -1,22 +1,18 @@
-/* splash screen text */
-
 .splash-text {
-  padding: 0rem;
+  padding: 0;
   text-align: center;
   margin-bottom: 6rem;
 }
-
 .splash-enter {
   background-color: var(--bgc);
   padding: 0.5rem 1rem;
 }
-
 .splash-enter {
   display: inline-block;
   position: relative;
-  background: none;
+  background: 0 0;
   border: none;
-  outline: none;
+  outline: 0;
   cursor: pointer;
   padding: 0.25rem 0.5rem;
   font-weight: 500;
@@ -29,9 +25,8 @@
   transition: all 0.3s ease;
   margin: 0 auto;
 }
-
-.splash-enter:before,
-.splash-enter:after {
+.splash-enter:after,
+.splash-enter:before {
   content: 'ENTER';
   position: absolute;
   top: 0;
@@ -39,12 +34,11 @@
   padding: 0.5rem 0;
   width: 100%;
   -webkit-clip: rect(0px, 0px, 0px, 0px);
-  clip: rect(0px, 0px, 0px, 0px);
+  clip: rect(0, 0, 0, 0);
   background: var(--bgc);
   border-radius: 2px;
   color: var(--text-clr);
 }
-
 .splash-enter:before {
   left: -3px;
   top: -2px;
@@ -52,7 +46,6 @@
   box-shadow: 1px 0 var(--bgc);
   border-radius: 2px;
 }
-
 .splash-enter:after {
   left: 1px;
   bottom: -2px;
@@ -60,107 +53,97 @@
   box-shadow: -1px 0 var(--bgc);
   border-radius: 2px;
 }
-
 .splash-enter:hover {
   background: var(--bgc);
   color: var(--text-clr);
   border-radius: 1.5px;
 }
-
 .splash-enter:hover:before {
   animation: glitch-test 2s infinite linear alternate-reverse;
 }
-
 .splash-enter:hover:after {
   animation: glitch-test 1.5s infinite linear alternate;
 }
-
 @keyframes glitch-test {
   0% {
-    clip: rect(-3px, 600px, 0px, 0px);
+    clip: rect(-3px, 600px, 0, 0);
   }
   5.88235% {
-    clip: rect(0px, 600px, 0px, 0px);
+    clip: rect(0, 600px, 0, 0);
   }
   11.76471% {
-    clip: rect(-3px, 600px, 0px, 0px);
+    clip: rect(-3px, 600px, 0, 0);
   }
   17.64706% {
-    clip: rect(-3px, 600px, 0px, 0px);
+    clip: rect(-3px, 600px, 0, 0);
   }
   23.52941% {
-    clip: rect(100px, 600px, 100px, 0px);
+    clip: rect(100px, 600px, 100px, 0);
   }
   29.41176% {
-    clip: rect(0px, 600px, 600px, 0px);
+    clip: rect(0, 600px, 600px, 0);
   }
   35.29412% {
-    clip: rect(100px, 600px, 0px, 0px);
+    clip: rect(100px, 600px, 0, 0);
   }
   41.17647% {
-    clip: rect(0px, 600px, 600px, 0px);
+    clip: rect(0, 600px, 600px, 0);
   }
   47.05882% {
-    clip: rect(100px, 600px, 0px, 0px);
+    clip: rect(100px, 600px, 0, 0);
   }
   52.94118% {
-    clip: rect(-3px, 600px, 0px, 0px);
+    clip: rect(-3px, 600px, 0, 0);
   }
   58.82353% {
-    clip: rect(100px, 450px, 100px, 0px);
+    clip: rect(100px, 450px, 100px, 0);
   }
   64.70588% {
-    clip: rect(0px, 450px, 0px, 0px);
+    clip: rect(0, 450px, 0, 0);
   }
   70.58824% {
-    clip: rect(100px, 450px, 100px, 0px);
+    clip: rect(100px, 450px, 100px, 0);
   }
   76.47059% {
-    clip: rect(0px, 450px, 0px, 0px);
+    clip: rect(0, 450px, 0, 0);
   }
   82.35294% {
-    clip: rect(0px, 450px, 0px, 0px);
+    clip: rect(0, 450px, 0, 0);
   }
   88.23529% {
-    clip: rect(0px, 450px, 0px, 0px);
+    clip: rect(0, 450px, 0, 0);
   }
   94.11765% {
-    clip: rect(0px, 450px, 0px, 0px);
+    clip: rect(0, 450px, 0, 0);
   }
   100% {
-    clip: rect(0px, 450px, 0px, 0px);
+    clip: rect(0, 450px, 0, 0);
   }
 }
-
 .splash-text-img {
   text-align: center;
   margin-top: 0.25rem;
   margin-bottom: 0.5rem;
 }
-
 .splash-desc {
   max-width: 75ch;
   margin: 0 auto;
   line-height: 1.6;
   text-transform: capitalize;
-  font-weight: normal;
+  font-weight: 400;
 }
-
 @media (max-width: 1000px) {
   .splash-text {
     margin-bottom: 4rem;
   }
-
   .splash-enter {
     font-size: 2.5rem;
   }
 }
-
 @media (max-width: 800px) {
   .splash-text {
     margin-bottom: 4rem;
   }
-
   .splash-enter {
     font-size: 2rem;
   }

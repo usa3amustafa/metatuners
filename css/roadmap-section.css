@@ -1,31 +1,23 @@
-/* roadmap section */
-
 .roadmap-section-title {
   margin-bottom: 2rem;
 }
-
 .roadmap-desc {
   max-width: 60ch;
   font-size: 0.9rem;
   line-height: 1.6;
-
   transition: transform 0.7s ease-out, opacity 0.7s ease-out;
 }
-
 .steps {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 2rem;
   row-gap: 4rem;
-
   margin-top: 2rem;
 }
-
 .step {
   max-width: 400px;
   margin: 0 auto;
 }
-
 .step-one {
   transition: transform 0.7s ease-out 0s, opacity 0.7s ease-out 0s;
 }
@@ -38,72 +30,57 @@
 .step-four {
   transition: transform 0.7s ease-out 0.3s, opacity 0.7s ease-out 0.3s;
 }
-
 .step-image {
   display: flex;
   align-items: flex-end;
-
   transform-style: preserve-3d;
   perspective: 1000px;
 }
-
 .step-info {
   margin-left: 2rem;
 }
-
 .step-img {
   margin-bottom: 2rem;
   justify-self: center;
-
   transform: translateZ(30px);
 }
-
 .step-title {
   font-size: 2rem;
   text-transform: uppercase;
   margin-bottom: 0.5rem;
 }
-
 .step-info > ul {
   list-style: disc;
   line-height: 1.6;
 }
-
 @media (max-width: 1200px) {
   .roadmap-section-title {
     margin-bottom: 1rem;
   }
-
   .steps {
     row-gap: 2rem;
   }
 }
-
 @media (max-width: 800px) {
   .steps {
     grid-template-columns: 1fr;
     row-gap: 4rem;
   }
-
   .step-title {
     margin-left: 2rem;
   }
-
   .step-info > ul {
     margin-left: 2rem;
   }
-
   .step-image {
     max-width: 400px;
     width: 85%;
     margin: 0 auto;
   }
-
   .step-info {
     max-width: 70%;
     margin: 0 auto;
   }
-
   .step-one {
     transition: transform 0.7s ease-out, opacity 0.7s ease-out;
   }

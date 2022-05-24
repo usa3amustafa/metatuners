@@ -1,24 +1,19 @@
 .contact-us-section {
   padding-top: 4rem;
 }
-
 .contact-us-logo {
   text-align: center;
 }
-
 .contact-us-logo-img {
   max-width: 10rem;
   transition: transform 0.7s ease-in, opacity 0.7s ease-in;
 }
-
 .contact-us-section-title {
   text-align: center;
   max-width: 22ch;
   margin: 2rem auto;
-
   transition: transform 0.7s ease-in, opacity 0.7s ease-in;
 }
-
 .contact-us-form {
   max-width: 700px;
   margin: 0 auto;
@@ -28,7 +23,6 @@
   row-gap: 1rem;
   transition: transform 0.7s ease-in, opacity 0.7s ease-in;
 }
-
 .form-element > input {
   width: 100%;
   padding: 1rem;
@@ -37,33 +31,27 @@
   font-weight: 400;
   background-color: var(--black-light-1);
   border: none;
-  outline: none;
+  outline: 0;
   color: var(--black-light);
   letter-spacing: 1px;
   border-radius: 2px;
-
   transition: box-shadow 0.3s ease-in-out;
 }
-
 .form-element > input:focus-visible {
   box-shadow: 0 0 5px var(--blue-clr-op-10);
-  outline: none;
+  outline: 0;
 }
-
 .form-btn {
   grid-column: 1/-1;
 }
-
 .form-btn-btn {
   background-color: var(--blue-clr);
   width: 100%;
 }
-
 .form-btn-btn:hover {
   box-shadow: inset 800px 0 0 0 var(--text-clr);
   color: var(--blue-clr);
 }
-
 .contact-us-links {
   grid-column: 1/-1;
   display: flex;
@@ -73,7 +61,6 @@
   flex-wrap: wrap;
   transition: transform 0.7s ease-in, opacity 0.7s ease-in;
 }
-
 .contact-us-link {
   display: flex;
   justify-content: center;
@@ -82,27 +69,21 @@
   font-weight: 400;
   color: var(--text-clr);
   text-decoration: none;
-
   transition: color 0.3s ease-in-out;
 }
-
 .contact-us-link:hover {
   color: var(--blue-clr);
 }
-
 .contact-us-link-3 {
   order: 2;
 }
-
 .email-icon {
   color: var(--blue-clr);
 }
-
 @media (max-width: 800px) {
   .contact-us-form {
     grid-template-columns: 1fr;
   }
-
   .form-btn-btn {
     padding: 1rem;
   }
